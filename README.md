@@ -145,7 +145,7 @@
     .heroImg{
       background:
         linear-gradient(180deg, rgba(0,0,0,.0), rgba(0,0,0,.55)),
-        url("assets/hero.jpg");
+        url("photos/M.Abrioux-005.jpg");
       background-size:cover;
       background-position:center;
       flex:1;
@@ -210,35 +210,48 @@
     .li b{display:block}
     .li span{display:block; color:var(--muted); font-size:14px}
     .gallery{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr .8fr;
-      gap: 12px;
+      columns: 3;
+      column-gap: 12px;
     }
+    @media (max-width: 900px){ .gallery{ columns: 2 } }
+    @media (max-width: 500px){ .gallery{ columns: 1 } }
     .g{
+      break-inside: avoid;
+      margin-bottom: 12px;
       border-radius: var(--radius);
       border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.04);
       overflow:hidden;
-      min-height: 210px;
       position:relative;
+      cursor: pointer;
     }
-    .g.big{grid-row: span 2; min-height: 432px;}
     .g img{
-      width:100%; height:100%; object-fit:cover; display:block;
+      width:100%; height:auto; display:block;
       filter:saturate(1.02) contrast(1.02);
+      transition: transform .25s ease;
     }
-    .g .cap{
-      position:absolute; left:12px; bottom:12px;
-      padding:8px 10px; border-radius:14px;
-      background: rgba(6,15,8,.68);
-      border:1px solid rgba(255,255,255,.12);
-      color: var(--text);
-      font-size:13px;
+    .g:hover img{ transform: scale(1.03); }
+    /* Lightbox */
+    #lb{
+      display:none; position:fixed; inset:0; z-index:100;
+      background:rgba(0,0,0,.92); place-items:center;
     }
-    @media (max-width: 900px){
-      .gallery{grid-template-columns:1fr}
-      .g.big{grid-row:auto; min-height:260px}
+    #lb.open{ display:grid; }
+    #lb img{ max-width:92vw; max-height:92vh; border-radius:12px; }
+    #lb-close{
+      position:fixed; top:18px; right:22px;
+      font-size:32px; color:#fff; cursor:pointer;
+      background:none; border:none; line-height:1;
     }
+    #lb-prev, #lb-next{
+      position:fixed; top:50%; transform:translateY(-50%);
+      font-size:28px; color:#fff; cursor:pointer;
+      background:rgba(255,255,255,.12); border:none;
+      border-radius:50%; width:48px; height:48px;
+      display:grid; place-items:center;
+    }
+    #lb-prev{ left:14px; }
+    #lb-next{ right:14px; }
     .cta{
       padding: 26px 0 48px;
     }
@@ -337,7 +350,6 @@
           <a class="btn" href="#galerie">Voir la galerie</a>
         </div>
 
-        <p class="hint">Astuce : remplacez <code>assets/hero.jpg</code> et les images de la galerie par vos photos.</p>
       </section>
 
       <aside class="heroCard" aria-label="Aperçu">
@@ -447,34 +459,20 @@
   <section id="galerie" class="section">
     <div class="wrap">
       <div class="titleRow">
-        <h2>📷 Galerie (photos à ajouter)</h2>
-        <p class="lead">Ajoutez vos photos dans le dossier <code>assets/</code> puis mettez à jour les chemins ci-dessous.</p>
+        <h2>📷 Galerie</h2>
+        <p class="lead">106 photos du bien — cliquez pour agrandir.</p>
       </div>
-
-      <div class="gallery" aria-label="Galerie photos">
-        <figure class="g big">
-          <img src="assets/galerie-1.jpg" alt="Vue principale du bien (à remplacer)" onerror="this.style.display='none'; this.parentElement.style.background='rgba(255,255,255,.04)';" />
-          <figcaption class="cap">Photo 1 — Façade / vue principale</figcaption>
-        </figure>
-        <figure class="g">
-          <img src="assets/galerie-2.jpg" alt="Chambre (à remplacer)" onerror="this.style.display='none'; this.parentElement.style.background='rgba(255,255,255,.04)';" />
-          <figcaption class="cap">Photo 2 — Chambre</figcaption>
-        </figure>
-        <figure class="g">
-          <img src="assets/galerie-3.jpg" alt="Salle petit-déjeuner (à remplacer)" onerror="this.style.display='none'; this.parentElement.style.background='rgba(255,255,255,.04)';" />
-          <figcaption class="cap">Photo 3 — Salle petit-déjeuner</figcaption>
-        </figure>
-        <figure class="g">
-          <img src="assets/galerie-4.jpg" alt="Cuisine (à remplacer)" onerror="this.style.display='none'; this.parentElement.style.background='rgba(255,255,255,.04)';" />
-          <figcaption class="cap">Photo 4 — Cuisine</figcaption>
-        </figure>
-        <figure class="g">
-          <img src="assets/galerie-5.jpg" alt="Terrasse / extérieur (à remplacer)" onerror="this.style.display='none'; this.parentElement.style.background='rgba(255,255,255,.04)';" />
-          <figcaption class="cap">Photo 5 — Terrasse</figcaption>
-        </figure>
-      </div>
+      <div class="gallery" id="gallery" aria-label="Galerie photos"></div>
     </div>
   </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie">
+    <button id="lb-close" aria-label="Fermer">✕</button>
+    <button id="lb-prev" aria-label="Précédente">‹</button>
+    <img id="lb-img" src="" alt="" />
+    <button id="lb-next" aria-label="Suivante">›</button>
+  </div>
 
   <!-- CONTACT -->
   <section id="contact" class="cta">
@@ -544,6 +542,48 @@
   <script>
     // Année automatique
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Galerie
+    const photos = Array.from({length: 106}, (_, i) => `M.Abrioux-${String(i+1).padStart(3,'0')}.jpg`);
+    const gallery = document.getElementById("gallery");
+    photos.forEach((name, idx) => {
+      const fig = document.createElement("figure");
+      fig.className = "g";
+      fig.dataset.idx = idx;
+      const img = document.createElement("img");
+      img.src = `photos/${name}`;
+      img.alt = `Photo ${idx+1}`;
+      img.loading = "lazy";
+      fig.appendChild(img);
+      fig.addEventListener("click", () => openLb(idx));
+      gallery.appendChild(fig);
+    });
+
+    // Lightbox
+    const lb = document.getElementById("lb");
+    const lbImg = document.getElementById("lb-img");
+    let current = 0;
+    function openLb(idx) {
+      current = idx;
+      lbImg.src = `photos/${photos[idx]}`;
+      lbImg.alt = `Photo ${idx+1}`;
+      lb.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+    function closeLb() {
+      lb.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+    document.getElementById("lb-close").addEventListener("click", closeLb);
+    document.getElementById("lb-prev").addEventListener("click", () => openLb((current - 1 + photos.length) % photos.length));
+    document.getElementById("lb-next").addEventListener("click", () => openLb((current + 1) % photos.length));
+    lb.addEventListener("click", e => { if(e.target === lb) closeLb(); });
+    document.addEventListener("keydown", e => {
+      if(!lb.classList.contains("open")) return;
+      if(e.key === "Escape") closeLb();
+      if(e.key === "ArrowLeft") openLb((current - 1 + photos.length) % photos.length);
+      if(e.key === "ArrowRight") openLb((current + 1) % photos.length);
+    });
 
     // Envoi via mailto (simple et compatible GitHub Pages)
     const form = document.getElementById("leadForm");
