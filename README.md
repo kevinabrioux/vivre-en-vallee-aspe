@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bien immobilier à vendre – Bedous (Vallée d’Aspe) | 300 m² + chambres d’hôtes</title>
   <meta name="description" content="Ensemble immobilier ~300 m² au centre de Bedous (Vallée d’Aspe). Chambres d’hôtes en activité avec revenus immédiats, potentiel commercial et partie privative." />
-  <meta name="theme-color" content="#0b1f17" />
+  <meta name="theme-color" content="#0e1f13" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)" />
@@ -33,12 +33,12 @@
 
   <style>
     :root{
-      --bg:#07140f;
-      --card:#0b1f17;
-      --text:#e7f3ee;
-      --muted:#b8c9c2;
-      --brand:#3ddc97;
-      --brand2:#56a3ff;
+      --bg:#080f0a;
+      --card:#0e1f13;
+      --text:#edeae2;
+      --muted:#a9b8a0;
+      --brand:#52b788;
+      --brand2:#6baed6;
       --line:rgba(255,255,255,.10);
       --shadow: 0 18px 60px rgba(0,0,0,.35);
       --radius: 18px;
@@ -52,9 +52,9 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color:var(--text);
       background:
-        radial-gradient(900px 500px at 20% 10%, rgba(61,220,151,.18), transparent 55%),
-        radial-gradient(900px 500px at 80% 20%, rgba(86,163,255,.16), transparent 55%),
-        linear-gradient(180deg, #06120d, #04100b);
+        radial-gradient(900px 500px at 20% 10%, rgba(82,183,136,.16), transparent 55%),
+        radial-gradient(900px 500px at 80% 20%, rgba(107,174,214,.13), transparent 55%),
+        linear-gradient(180deg, #060f08, #04100a);
       line-height:1.55;
     }
     a{color:inherit}
@@ -62,7 +62,7 @@
     .nav{
       position:sticky; top:0; z-index:20;
       backdrop-filter:saturate(140%) blur(10px);
-      background:rgba(4,16,11,.6);
+      background:rgba(6,15,8,.65);
       border-bottom:1px solid var(--line);
     }
     .navinner{
@@ -96,7 +96,7 @@
     .btn.primary{
       border:none;
       background:linear-gradient(135deg,var(--brand),var(--brand2));
-      color:#04100b;
+      color:#060f08;
     }
     .btn:hover{ transform:translateY(-1px); transition:transform .15s ease }
     .hero{
@@ -157,7 +157,7 @@
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       gap:10px;
-      background: rgba(11,31,23,.75);
+      background: rgba(14,31,19,.80);
     }
     .kpi{
       padding:12px 12px;
@@ -206,7 +206,7 @@
       background: rgba(255,255,255,.04);
       border:1px solid rgba(255,255,255,.10);
     }
-    .ico{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;background:rgba(61,220,151,.14);border:1px solid rgba(61,220,151,.28)}
+    .ico{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;background:rgba(82,183,136,.14);border:1px solid rgba(82,183,136,.30)}
     .li b{display:block}
     .li span{display:block; color:var(--muted); font-size:14px}
     .gallery{
@@ -230,7 +230,7 @@
     .g .cap{
       position:absolute; left:12px; bottom:12px;
       padding:8px 10px; border-radius:14px;
-      background: rgba(4,16,11,.62);
+      background: rgba(6,15,8,.68);
       border:1px solid rgba(255,255,255,.12);
       color: var(--text);
       font-size:13px;
@@ -246,8 +246,8 @@
       border-radius: calc(var(--radius) + 6px);
       border:1px solid rgba(255,255,255,.14);
       background:
-        radial-gradient(600px 300px at 20% 0%, rgba(61,220,151,.18), transparent 60%),
-        radial-gradient(600px 300px at 90% 30%, rgba(86,163,255,.18), transparent 60%),
+        radial-gradient(600px 300px at 20% 0%, rgba(82,183,136,.16), transparent 60%),
+        radial-gradient(600px 300px at 90% 30%, rgba(107,174,214,.15), transparent 60%),
         rgba(255,255,255,.04);
       box-shadow: var(--shadow);
       padding: clamp(16px, 3vw, 22px);
@@ -267,7 +267,7 @@
       padding: 12px 12px;
       border-radius: 14px;
       border: 1px solid rgba(255,255,255,.14);
-      background: rgba(4,16,11,.35);
+      background: rgba(6,15,8,.35);
       color: var(--text);
       outline:none;
     }
@@ -275,11 +275,11 @@
     .hint{color:var(--muted); font-size:13px; margin:8px 0 0}
     footer{
       padding: 18px 0 28px;
-      color: rgba(231,243,238,.72);
+      color: rgba(237,234,226,.72);
       border-top: 1px solid var(--line);
-      background: rgba(4,16,11,.35);
+      background: rgba(6,15,8,.40);
     }
-    .small{font-size:13px; color:rgba(231,243,238,.72)}
+    .small{font-size:13px; color:rgba(237,234,226,.72)}
     .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px}
     .pill{
       font-size:13px;
