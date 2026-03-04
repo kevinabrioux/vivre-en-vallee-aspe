@@ -1,11 +1,10 @@
-<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bien immobilier à vendre – Bedous (Vallée d’Aspe) | 300 m² + chambres d’hôtes</title>
   <meta name="description" content="Ensemble immobilier ~300 m² au centre de Bedous (Vallée d’Aspe). Chambres d’hôtes en activité avec revenus immédiats, potentiel commercial et partie privative." />
-  <meta name="theme-color" content="#0e1f13" />
+  <meta name="theme-color" content="#f4f7f5" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)" />
@@ -33,14 +32,14 @@
 
   <style>
     :root{
-      --bg:#080f0a;
-      --card:#0e1f13;
-      --text:#edeae2;
-      --muted:#a9b8a0;
-      --brand:#52b788;
-      --brand2:#6baed6;
-      --line:rgba(255,255,255,.10);
-      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --bg:#f4f7f5;
+      --card:#ffffff;
+      --text:#1a2e22;
+      --muted:#5a7a68;
+      --brand:#2d8f5e;
+      --brand2:#3a7fb5;
+      --line:rgba(0,0,0,.09);
+      --shadow: 0 18px 60px rgba(0,0,0,.10);
       --radius: 18px;
       --max: 1120px;
       --pad: clamp(16px, 3vw, 28px);
@@ -52,9 +51,9 @@
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color:var(--text);
       background:
-        radial-gradient(900px 500px at 20% 10%, rgba(82,183,136,.16), transparent 55%),
-        radial-gradient(900px 500px at 80% 20%, rgba(107,174,214,.13), transparent 55%),
-        linear-gradient(180deg, #060f08, #04100a);
+        radial-gradient(900px 500px at 20% 10%, rgba(45,143,94,.10), transparent 55%),
+        radial-gradient(900px 500px at 80% 20%, rgba(58,127,181,.09), transparent 55%),
+        linear-gradient(180deg, #eef3f0, #f4f7f5);
       line-height:1.55;
     }
     a{color:inherit}
@@ -62,7 +61,7 @@
     .nav{
       position:sticky; top:0; z-index:20;
       backdrop-filter:saturate(140%) blur(10px);
-      background:rgba(6,15,8,.65);
+      background:rgba(244,247,245,.88);
       border-bottom:1px solid var(--line);
     }
     .navinner{
@@ -96,7 +95,7 @@
     .btn.primary{
       border:none;
       background:linear-gradient(135deg,var(--brand),var(--brand2));
-      color:#060f08;
+      color:#ffffff;
     }
     .btn:hover{ transform:translateY(-1px); transition:transform .15s ease }
     .hero{
@@ -157,7 +156,7 @@
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       gap:10px;
-      background: rgba(14,31,19,.80);
+      background: rgba(255,255,255,.85);
     }
     .kpi{
       padding:12px 12px;
@@ -206,7 +205,7 @@
       background: rgba(255,255,255,.04);
       border:1px solid rgba(255,255,255,.10);
     }
-    .ico{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;background:rgba(82,183,136,.14);border:1px solid rgba(82,183,136,.30)}
+    .ico{width:28px;height:28px;border-radius:10px;display:grid;place-items:center;background:rgba(45,143,94,.12);border:1px solid rgba(45,143,94,.28)}
     .li b{display:block}
     .li span{display:block; color:var(--muted); font-size:14px}
     .gallery{
@@ -259,8 +258,8 @@
       border-radius: calc(var(--radius) + 6px);
       border:1px solid rgba(255,255,255,.14);
       background:
-        radial-gradient(600px 300px at 20% 0%, rgba(82,183,136,.16), transparent 60%),
-        radial-gradient(600px 300px at 90% 30%, rgba(107,174,214,.15), transparent 60%),
+        radial-gradient(600px 300px at 20% 0%, rgba(45,143,94,.12), transparent 60%),
+        radial-gradient(600px 300px at 90% 30%, rgba(58,127,181,.10), transparent 60%),
         rgba(255,255,255,.04);
       box-shadow: var(--shadow);
       padding: clamp(16px, 3vw, 22px);
@@ -279,8 +278,8 @@
       width:100%;
       padding: 12px 12px;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(6,15,8,.35);
+      border: 1px solid rgba(0,0,0,.14);
+      background: rgba(255,255,255,.80);
       color: var(--text);
       outline:none;
     }
@@ -288,11 +287,11 @@
     .hint{color:var(--muted); font-size:13px; margin:8px 0 0}
     footer{
       padding: 18px 0 28px;
-      color: rgba(237,234,226,.72);
+      color: var(--muted);
       border-top: 1px solid var(--line);
-      background: rgba(6,15,8,.40);
+      background: rgba(238,243,240,.80);
     }
-    .small{font-size:13px; color:rgba(237,234,226,.72)}
+    .small{font-size:13px; color:var(--muted)}
     .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px}
     .pill{
       font-size:13px;
