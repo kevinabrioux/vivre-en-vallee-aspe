@@ -424,7 +424,6 @@
         <div class="li"><div class="ico">🧖‍♂️</div><div><b>Sauna</b><span>Différenciant, idéal après randonnée.</span></div></div>
         <div class="li"><div class="ico">🧺</div><div><b>Lingerie</b><span>Organisation facilitée pour l’exploitation.</span></div></div>
         <div class="li"><div class="ico">🛋️</div><div><b>Salon commun</b><span>Espace convivial pour les hôtes.</span></div></div>
-        <div class="li"><div class="ico">🌿</div><div><b>Petite terrasse</b><span>Un extérieur appréciable pour les pauses.</span></div></div>
       </div>
     </div>
   </section>
