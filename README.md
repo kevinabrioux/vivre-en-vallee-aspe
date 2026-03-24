@@ -315,8 +315,8 @@
 
       <nav class="navlinks" aria-label="Navigation principale">
         <a href="#points-forts">Points forts</a>
-        <a href="#chambres">Chambres d’hôtes</a>
         <a href="#rdc">Rez-de-chaussée</a>
+        <a href="#chambres">Chambres d’hôtes</a>
         <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -408,26 +408,6 @@
     </div>
   </section>
 
-  <!-- CHAMBRES D'HOTES -->
-  <section id="chambres" class="section">
-    <div class="wrap">
-      <div class="titleRow">
-        <h2>🛏️ Espace chambres d’hôtes (1er étage)</h2>
-        <p class="lead">Un espace chaleureux, apprécié par la clientèle, pensé pour le confort et l’exploitation.</p>
-      </div>
-
-      <div class="list">
-        <div class="li"><div class="ico">🛌</div><div><b>4 chambres confortables</b><span>Disposition idéale pour accueillir des voyageurs.</span></div></div>
-        <div class="li"><div class="ico">🚿</div><div><b>Salles d’eau privatives</b><span>Confort et autonomie pour chaque chambre.</span></div></div>
-        <div class="li"><div class="ico">🚻</div><div><b>WC privatifs</b><span>Atout important pour la clientèle.</span></div></div>
-        <div class="li"><div class="ico">❄️</div><div><b>Climatisation</b><span>Confort été/hiver (selon équipements en place).</span></div></div>
-        <div class="li"><div class="ico">🧖‍♂️</div><div><b>Sauna</b><span>Différenciant, idéal après randonnée.</span></div></div>
-        <div class="li"><div class="ico">🧺</div><div><b>Lingerie</b><span>Organisation facilitée pour l’exploitation.</span></div></div>
-        <div class="li"><div class="ico">🛋️</div><div><b>Salon commun</b><span>Espace convivial pour les hôtes.</span></div></div>
-      </div>
-    </div>
-  </section>
-
   <!-- RDC -->
   <section id="rdc" class="section">
     <div class="wrap">
@@ -449,6 +429,26 @@
           <h3>🧩 Polyvalence</h3>
           <p>Possibilités : café, restaurant, concept-store, bien-être, atelier, etc.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMBRES D’HOTES -->
+  <section id="chambres" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>🛏️ Espace chambres d’hôtes (1er étage)</h2>
+        <p class="lead">Un espace chaleureux, apprécié par la clientèle, pensé pour le confort et l’exploitation.</p>
+      </div>
+
+      <div class="list">
+        <div class="li"><div class="ico">🛌</div><div><b>4 chambres confortables</b><span>Disposition idéale pour accueillir des voyageurs.</span></div></div>
+        <div class="li"><div class="ico">🚿</div><div><b>Salles d’eau privatives</b><span>Confort et autonomie pour chaque chambre.</span></div></div>
+        <div class="li"><div class="ico">🚻</div><div><b>WC privatifs</b><span>Atout important pour la clientèle.</span></div></div>
+        <div class="li"><div class="ico">❄️</div><div><b>Climatisation</b><span>Confort été/hiver (selon équipements en place).</span></div></div>
+        <div class="li"><div class="ico">🧖‍♂️</div><div><b>Sauna</b><span>Différenciant, idéal après randonnée.</span></div></div>
+        <div class="li"><div class="ico">🧺</div><div><b>Lingerie</b><span>Organisation facilitée pour l’exploitation.</span></div></div>
+        <div class="li"><div class="ico">🛋️</div><div><b>Salon commun</b><span>Espace convivial pour les hôtes.</span></div></div>
       </div>
     </div>
   </section>
