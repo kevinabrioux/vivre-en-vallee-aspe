@@ -210,55 +210,47 @@
     .li span{display:block; color:var(--muted); font-size:14px}
     .carousel-wrap{
       position: relative;
+      overflow: hidden;
     }
     .gallery{
       display: flex;
-      gap: 12px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 8px;
+      transition: transform .4s ease;
     }
-    .gallery::-webkit-scrollbar{ height: 6px; }
-    .gallery::-webkit-scrollbar-track{ background: rgba(255,255,255,.06); border-radius: 3px; }
-    .gallery::-webkit-scrollbar-thumb{ background: var(--accent); border-radius: 3px; }
     .g{
-      flex: 0 0 320px;
-      scroll-snap-align: start;
+      flex: 0 0 100%;
       border-radius: var(--radius);
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      overflow:hidden;
-      position:relative;
+      overflow: hidden;
       cursor: pointer;
     }
-    @media (max-width: 600px){ .g{ flex: 0 0 260px; } }
     .g img{
-      width:100%; height: 220px; object-fit: cover; display:block;
-      filter:saturate(1.02) contrast(1.02);
-      transition: transform .25s ease;
+      width: 100%; height: 480px; object-fit: cover; display: block;
+      filter: saturate(1.02) contrast(1.02);
     }
-    .g:hover img{ transform: scale(1.03); }
+    @media (max-width: 600px){ .g img{ height: 260px; } }
     .car-btn{
       position: absolute;
       top: 50%; transform: translateY(-50%);
       z-index: 5;
-      background: var(--accent);
+      background: rgba(0,0,0,.45);
       color: #fff;
       border: none;
       border-radius: 50%;
-      width: 42px; height: 42px;
-      font-size: 1.4rem;
+      width: 52px; height: 52px;
+      font-size: 2rem;
       cursor: pointer;
       display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,.4);
+      backdrop-filter: blur(4px);
       transition: background .2s;
     }
-    .car-btn:hover{ background: var(--accent2); }
-    .car-btn.prev{ left: -16px; }
-    .car-btn.next{ right: -16px; }
-    @media (max-width: 600px){ .car-btn.prev{ left: 4px; } .car-btn.next{ right: 4px; } }
+    .car-btn:hover{ background: rgba(0,0,0,.7); }
+    .car-btn.prev{ left: 16px; }
+    .car-btn.next{ right: 16px; }
+    .car-counter{
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
     /* Lightbox */
     #lb{
       display:none; position:fixed; inset:0; z-index:100;
@@ -489,12 +481,13 @@
         <h2>📷 Galerie</h2>
         <p class="lead">106 photos du bien — cliquez pour agrandir.</p>
       </div>
-      <div class="carousel-wrap">
-        <button class="car-btn prev" id="car-prev" aria-label="Précédente">‹</button>
-        <div class="gallery" id="gallery" aria-label="Galerie photos"></div>
-        <button class="car-btn next" id="car-next" aria-label="Suivante">›</button>
-      </div>
     </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" id="car-prev" aria-label="Précédente">‹</button>
+      <div class="gallery" id="gallery" aria-label="Galerie photos"></div>
+      <button class="car-btn next" id="car-next" aria-label="Suivante">›</button>
+    </div>
+    <p class="car-counter" id="car-counter">1 / 106</p>
   </section>
 
   <!-- LIGHTBOX -->
@@ -590,10 +583,23 @@
       gallery.appendChild(fig);
     });
 
-    // Carousel buttons
-    const carScroll = 340;
-    document.getElementById("car-prev").addEventListener("click", () => gallery.scrollBy({left: -carScroll, behavior: "smooth"}));
-    document.getElementById("car-next").addEventListener("click", () => gallery.scrollBy({left: carScroll, behavior: "smooth"}));
+    // Carousel
+    let carIdx = 0;
+    const carCounter = document.getElementById("car-counter");
+    function goTo(idx) {
+      carIdx = (idx + photos.length) % photos.length;
+      gallery.style.transform = `translateX(-${carIdx * 100}%)`;
+      carCounter.textContent = `${carIdx + 1} / ${photos.length}`;
+    }
+    document.getElementById("car-prev").addEventListener("click", () => goTo(carIdx - 1));
+    document.getElementById("car-next").addEventListener("click", () => goTo(carIdx + 1));
+    // Swipe tactile
+    let touchStartX = 0;
+    gallery.addEventListener("touchstart", e => { touchStartX = e.touches[0].clientX; }, {passive:true});
+    gallery.addEventListener("touchend", e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if(Math.abs(dx) > 40) goTo(dx < 0 ? carIdx + 1 : carIdx - 1);
+    }, {passive:true});
 
     // Lightbox
     const lb = document.getElementById("lb");
