@@ -452,6 +452,12 @@
         </article>
       </div>
     </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" id="rdc-prev" aria-label="Précédente">‹</button>
+      <div class="gallery" id="gallery-rdc" aria-label="Photos espaces communs"></div>
+      <button class="car-btn next" id="rdc-next" aria-label="Suivante">›</button>
+    </div>
+    <p class="car-counter" id="rdc-counter">1 / 159</p>
   </section>
 
   <!-- CHAMBRES D’HOTES -->
@@ -472,6 +478,12 @@
         <div class="li"><div class="ico">🛋️</div><div><b>Salon commun</b><span>Espace convivial pour les hôtes.</span></div></div>
       </div>
     </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" id="ch-prev" aria-label="Précédente">‹</button>
+      <div class="gallery" id="gallery-ch" aria-label="Photos chambres d'hôtes"></div>
+      <button class="car-btn next" id="ch-next" aria-label="Suivante">›</button>
+    </div>
+    <p class="car-counter" id="ch-counter">1 / 159</p>
   </section>
 
   <!-- GALERIE -->
@@ -567,47 +579,65 @@
     // Année automatique
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Galerie
+    // Liste complète des photos (dossiers communs/chambres)
+    const allPhotos = ["CIMG1380.JPG","CIMG1391.JPG","CIMG1392.JPG","CIMG1394.JPG","CIMG1395.JPG","CIMG1396.JPG","CIMG1397.JPG","CIMG1398.JPG","CIMG1401.JPG","CIMG1402.JPG","CIMG1403.JPG","CIMG1404.JPG","DSCN3400.JPG","DSCN3400(1).JPG","DSCN3402.JPG","DSCN3402(1).JPG","DSCN3403.JPG","IMG_0071.JPG","IMG_0385.JPG","IMG_0386.JPG","IMG_0387.JPG","IMG_0420.JPG","IMG_1997.JPG","IMG_1999.JPG","IMG_20150714_192039.jpg","IMG_3076.JPG","IMG_3078.JPG","IMG_3080.JPG","IMG_3081.JPG","IMG_3082.JPG","IMG_3083.JPG","IMG_3084.JPG","IMG_3085.JPG","IMG_3086.JPG","IMG_3277.JPG","IMG_3278.JPG","IMG_3740.JPG","IMG_3741.JPG","IMG_3743.JPG","IMG_3746.JPG","M.Abrioux-001.jpg","M.Abrioux-002.jpg","M.Abrioux-003.jpg","M.Abrioux-004.jpg","M.Abrioux-005.jpg","M.Abrioux-006.jpg","M.Abrioux-007.jpg","M.Abrioux-008.jpg","M.Abrioux-009.jpg","M.Abrioux-010.jpg","M.Abrioux-011.jpg","M.Abrioux-012.jpg","M.Abrioux-013.jpg","M.Abrioux-014.jpg","M.Abrioux-015.jpg","M.Abrioux-016.jpg","M.Abrioux-017.jpg","M.Abrioux-018.jpg","M.Abrioux-019.jpg","M.Abrioux-020.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-033.jpg","M.Abrioux-034.jpg","M.Abrioux-035.jpg","M.Abrioux-036.jpg","M.Abrioux-037.jpg","M.Abrioux-038.jpg","M.Abrioux-039.jpg","M.Abrioux-040.jpg","M.Abrioux-041.jpg","M.Abrioux-042.jpg","M.Abrioux-043.jpg","M.Abrioux-044.jpg","M.Abrioux-045.jpg","M.Abrioux-046.jpg","M.Abrioux-047.jpg","M.Abrioux-048.jpg","M.Abrioux-049.jpg","M.Abrioux-050.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-054.jpg","M.Abrioux-055.jpg","M.Abrioux-056.jpg","M.Abrioux-057.jpg","M.Abrioux-058.jpg","M.Abrioux-059.jpg","M.Abrioux-060.jpg","M.Abrioux-061.jpg","M.Abrioux-062.jpg","M.Abrioux-063.jpg","M.Abrioux-064.jpg","M.Abrioux-065.jpg","M.Abrioux-066.jpg","M.Abrioux-067.jpg","M.Abrioux-068.jpg","M.Abrioux-069.jpg","M.Abrioux-070.jpg","M.Abrioux-071.jpg","M.Abrioux-072.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg","M.Abrioux-075.jpg","M.Abrioux-076.jpg","M.Abrioux-079.jpg","M.Abrioux-080.jpg","M.Abrioux-081.jpg","M.Abrioux-082.jpg","M.Abrioux-083.jpg","M.Abrioux-084.jpg","M.Abrioux-085.jpg","M.Abrioux-086.jpg","M.Abrioux-087.jpg","M.Abrioux-088.jpg","M.Abrioux-089.jpg","M.Abrioux-090.jpg","M.Abrioux-091.jpg","M.Abrioux-092.jpg","M.Abrioux-093.jpg","M.Abrioux-094.jpg","M.Abrioux-095.jpg","M.Abrioux-096.jpg","M.Abrioux-097.jpg","M.Abrioux-098.jpg","M.Abrioux-099.jpg","M.Abrioux-100.jpg","M.Abrioux-101.jpg","M.Abrioux-102.jpg","M.Abrioux-103.jpg","M.Abrioux-104.jpg","M.Abrioux-105.jpg","M.Abrioux-106.jpg","salle d eau (1).JPG","salle d eau (1)(1).JPG","salle d eau (1)(2).JPG","salle d eau.JPG"];
+
+    // Fonction générique de carrousel
+    function buildCarousel(galleryEl, files, folder, counterEl, onClickPhoto) {
+      files.forEach((name, idx) => {
+        const fig = document.createElement("figure");
+        fig.className = "g";
+        const img = document.createElement("img");
+        img.src = `${folder}/${name}`;
+        img.alt = `Photo ${idx+1}`;
+        img.loading = "lazy";
+        fig.appendChild(img);
+        if(onClickPhoto) fig.addEventListener("click", () => onClickPhoto(idx));
+        galleryEl.appendChild(fig);
+      });
+      let cur = 0;
+      function goTo(idx) {
+        cur = (idx + files.length) % files.length;
+        galleryEl.style.transform = `translateX(-${cur * 100}%)`;
+        counterEl.textContent = `${cur + 1} / ${files.length}`;
+      }
+      galleryEl.parentElement.querySelector(".prev").addEventListener("click", () => goTo(cur - 1));
+      galleryEl.parentElement.querySelector(".next").addEventListener("click", () => goTo(cur + 1));
+      let tx = 0;
+      galleryEl.addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive:true});
+      galleryEl.addEventListener("touchend", e => {
+        const dx = e.changedTouches[0].clientX - tx;
+        if(Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
+      }, {passive:true});
+    }
+
+    // Galerie principale (M.Abrioux uniquement)
     const photos = Array.from({length: 106}, (_, i) => `M.Abrioux-${String(i+1).padStart(3,'0')}.jpg`);
     const gallery = document.getElementById("gallery");
-    photos.forEach((name, idx) => {
-      const fig = document.createElement("figure");
-      fig.className = "g";
-      fig.dataset.idx = idx;
-      const img = document.createElement("img");
-      img.src = `photos/${name}`;
-      img.alt = `Photo ${idx+1}`;
-      img.loading = "lazy";
-      fig.appendChild(img);
-      fig.addEventListener("click", () => openLb(idx));
-      gallery.appendChild(fig);
-    });
+    buildCarousel(gallery, photos, "photos", document.getElementById("car-counter"), idx => openLb(idx, photos, "photos"));
 
-    // Carousel
-    let carIdx = 0;
-    const carCounter = document.getElementById("car-counter");
-    function goTo(idx) {
-      carIdx = (idx + photos.length) % photos.length;
-      gallery.style.transform = `translateX(-${carIdx * 100}%)`;
-      carCounter.textContent = `${carIdx + 1} / ${photos.length}`;
-    }
-    document.getElementById("car-prev").addEventListener("click", () => goTo(carIdx - 1));
-    document.getElementById("car-next").addEventListener("click", () => goTo(carIdx + 1));
-    // Swipe tactile
-    let touchStartX = 0;
-    gallery.addEventListener("touchstart", e => { touchStartX = e.touches[0].clientX; }, {passive:true});
-    gallery.addEventListener("touchend", e => {
-      const dx = e.changedTouches[0].clientX - touchStartX;
-      if(Math.abs(dx) > 40) goTo(dx < 0 ? carIdx + 1 : carIdx - 1);
-    }, {passive:true});
+    // Carrousel Espaces communs
+    buildCarousel(
+      document.getElementById("gallery-rdc"), allPhotos, "photos-communs",
+      document.getElementById("rdc-counter"),
+      idx => openLb(idx, allPhotos, "photos-communs")
+    );
+
+    // Carrousel Chambres d'hôtes
+    buildCarousel(
+      document.getElementById("gallery-ch"), allPhotos, "photos-chambres",
+      document.getElementById("ch-counter"),
+      idx => openLb(idx, allPhotos, "photos-chambres")
+    );
 
     // Lightbox
     const lb = document.getElementById("lb");
     const lbImg = document.getElementById("lb-img");
-    let current = 0;
-    function openLb(idx) {
+    let current = 0, lbFiles = photos, lbFolder = "photos";
+    function openLb(idx, files, folder) {
+      if(files) { lbFiles = files; lbFolder = folder; }
       current = idx;
-      lbImg.src = `photos/${photos[idx]}`;
+      lbImg.src = `${lbFolder}/${lbFiles[idx]}`;
       lbImg.alt = `Photo ${idx+1}`;
       lb.classList.add("open");
       document.body.style.overflow = "hidden";
@@ -617,14 +647,14 @@
       document.body.style.overflow = "";
     }
     document.getElementById("lb-close").addEventListener("click", closeLb);
-    document.getElementById("lb-prev").addEventListener("click", () => openLb((current - 1 + photos.length) % photos.length));
-    document.getElementById("lb-next").addEventListener("click", () => openLb((current + 1) % photos.length));
+    document.getElementById("lb-prev").addEventListener("click", () => openLb((current - 1 + lbFiles.length) % lbFiles.length));
+    document.getElementById("lb-next").addEventListener("click", () => openLb((current + 1) % lbFiles.length));
     lb.addEventListener("click", e => { if(e.target === lb) closeLb(); });
     document.addEventListener("keydown", e => {
       if(!lb.classList.contains("open")) return;
       if(e.key === "Escape") closeLb();
-      if(e.key === "ArrowLeft") openLb((current - 1 + photos.length) % photos.length);
-      if(e.key === "ArrowRight") openLb((current + 1) % photos.length);
+      if(e.key === "ArrowLeft") openLb((current - 1 + lbFiles.length) % lbFiles.length);
+      if(e.key === "ArrowRight") openLb((current + 1) % lbFiles.length);
     });
 
     // Envoi via mailto (simple et compatible GitHub Pages)
