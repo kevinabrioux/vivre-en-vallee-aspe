@@ -210,25 +210,33 @@
     .li span{display:block; color:var(--muted); font-size:14px}
     .carousel-wrap{
       position: relative;
-      overflow: hidden;
-      max-width: 330px;
+      max-width: var(--max);
       margin: 0 auto;
     }
     .gallery{
       display: flex;
-      transition: transform .4s ease;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
     }
+    .gallery::-webkit-scrollbar{ height: 5px; }
+    .gallery::-webkit-scrollbar-track{ background: rgba(0,0,0,.06); border-radius: 3px; }
+    .gallery::-webkit-scrollbar-thumb{ background: var(--accent); border-radius: 3px; }
     .g{
-      flex: 0 0 100%;
+      flex: 0 0 min(600px, 90vw);
+      scroll-snap-align: start;
       border-radius: var(--radius);
       overflow: hidden;
       cursor: pointer;
     }
     .g img{
-      width: 100%; height: 480px; object-fit: cover; display: block;
+      width: 100%; height: 380px; object-fit: cover; display: block;
       filter: saturate(1.02) contrast(1.02);
     }
-    @media (max-width: 600px){ .g img{ height: 260px; } }
+    @media (max-width: 600px){ .g img{ height: 220px; } }
     .car-btn{
       position: absolute;
       top: 50%; transform: translateY(-50%);
@@ -597,19 +605,12 @@
         if(onClickPhoto) fig.addEventListener("click", () => onClickPhoto(idx));
         galleryEl.appendChild(fig);
       });
-      let cur = 0;
-      function goTo(idx) {
-        cur = (idx + files.length) % files.length;
-        galleryEl.style.transform = `translateX(-${cur * 100}%)`;
-        counterEl.textContent = `${cur + 1} / ${files.length}`;
-      }
-      galleryEl.parentElement.querySelector(".prev").addEventListener("click", () => goTo(cur - 1));
-      galleryEl.parentElement.querySelector(".next").addEventListener("click", () => goTo(cur + 1));
-      let tx = 0;
-      galleryEl.addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive:true});
-      galleryEl.addEventListener("touchend", e => {
-        const dx = e.changedTouches[0].clientX - tx;
-        if(Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
+      const slideWidth = () => galleryEl.firstChild ? galleryEl.firstChild.offsetWidth + 12 : 612;
+      galleryEl.parentElement.querySelector(".prev").addEventListener("click", () => galleryEl.scrollBy({left: -slideWidth(), behavior:"smooth"}));
+      galleryEl.parentElement.querySelector(".next").addEventListener("click", () => galleryEl.scrollBy({left: slideWidth(), behavior:"smooth"}));
+      galleryEl.addEventListener("scroll", () => {
+        const idx = Math.round(galleryEl.scrollLeft / slideWidth());
+        counterEl.textContent = `${idx + 1} / ${files.length}`;
       }, {passive:true});
     }
 
