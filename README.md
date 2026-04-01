@@ -211,6 +211,8 @@
     .carousel-wrap{
       position: relative;
       overflow: hidden;
+      max-width: 330px;
+      margin: 0 auto;
     }
     .gallery{
       display: flex;
