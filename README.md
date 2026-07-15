@@ -539,11 +539,9 @@
           </div>
 
           <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap">
-            <a class="btn" href="tel:+33000000000">📱 Appeler (à modifier)</a>
-            <a class="btn" href="mailto:contact@exemple.fr?subject=Demande%20d%27informations%20-%20Bien%20%C3%A0%20Bedous">✉️ Email direct (à modifier)</a>
+            <a class="btn" href="tel:+33681945189">📱 06 81 94 51 89</a>
+            <a class="btn" href="mailto:michel.abrioux@gmail.com?subject=Demande%20d%27informations%20-%20Bien%20%C3%A0%20Bedous">✉️ michel.abrioux@gmail.com</a>
           </div>
-
-          <p class="hint">Pensez à remplacer le numéro et l’email ci-dessus.</p>
         </div>
 
         <form id="leadForm">
@@ -669,7 +667,7 @@
       const phone = document.getElementById("phone").value.trim();
       const msg = document.getElementById("msg").value.trim();
 
-      const to = "contact@exemple.fr"; // <-- à modifier
+      const to = "michel.abrioux@gmail.com";
       const subject = "Demande d'informations – Bien à Bedous (Vallée d’Aspe)";
       const body =
 `Bonjour,
