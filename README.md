@@ -2,13 +2,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bien immobilier à vendre – Bedous (Vallée d’Aspe) | 300 m² + chambres d’hôtes</title>
-  <meta name="description" content="Ensemble immobilier ~300 m² au centre de Bedous (Vallée d’Aspe). Chambres d’hôtes en activité avec revenus immédiats, potentiel commercial et partie privative." />
+  <title>Bien immobilier à vendre – Bedous (Vallée d’Aspe) | 311 m² + chambres d’hôtes</title>
+  <meta name="description" content="Ensemble immobilier de 311 m² au centre de Bedous (Vallée d’Aspe). Chambres d’hôtes en activité avec revenus immédiats, potentiel commercial et partie privative." />
   <meta name="theme-color" content="#f4f7f5" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)" />
-  <meta property="og:description" content="~300 m², chambres d’hôtes en activité, revenus immédiats, fort potentiel de reconversion commerciale, centre village." />
+  <meta property="og:description" content="311 m², chambres d’hôtes en activité, revenus immédiats, fort potentiel de reconversion commerciale, centre village." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/hero.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -19,7 +19,7 @@
     "@context":"https://schema.org",
     "@type":"RealEstateListing",
     "name":"Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)",
-    "description":"Ensemble immobilier d’environ 300 m² au centre de Bedous. Chambres d’hôtes en activité et potentiel commercial, avec possibilité d’habitation privative.",
+    "description":"Ensemble immobilier de 311 m² au centre de Bedous. DPE classe C, GES classe B. Chambres d’hôtes en activité et potentiel commercial, avec possibilité d’habitation privative.",
     "address":{
       "@type":"PostalAddress",
       "addressLocality":"Bedous",
@@ -363,13 +363,14 @@
         <div class="badge">🏡 Bien immobilier de caractère à vendre – <b>Bedous</b> (Vallée d’Aspe)</div>
         <h1 class="h1">Un lieu de vie + une activité au cœur des Pyrénées-Atlantiques</h1>
         <p class="sub">
-          Situé au <b>centre du village</b> (commodités à pied), cet ensemble immobilier d’environ <b>300 m²</b> offre une opportunité rare :
+          Situé au <b>centre du village</b> (commodités à pied), cet ensemble immobilier de <b>311 m²</b> offre une opportunité rare :
           <b>habiter sur place</b> tout en générant <b>immédiatement des revenus</b> grâce à une activité de <b>chambres d’hôtes</b> déjà en place.
         </p>
 
         <div class="pillRow" aria-label="Résumé">
           <span class="pill">📍 Centre village</span>
-          <span class="pill">🏠 ~300 m²</span>
+          <span class="pill">🏠 311 m²</span>
+          <span class="pill">⚡ DPE C · GES B</span>
           <span class="pill">💼 Activité en cours</span>
           <span class="pill">🔄 Potentiel commerce</span>
           <span class="pill">🔑 Projet clé en main</span>
@@ -387,7 +388,7 @@
         <div class="heroMeta">
           <div class="kpi">
             <b>Surface</b>
-            <span>~300 m²</span>
+            <span>311 m² · DPE C</span>
           </div>
           <div class="kpi">
             <b>Usage</b>
