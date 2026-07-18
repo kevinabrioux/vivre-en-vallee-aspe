@@ -348,6 +348,7 @@
         <a href="#points-forts">Points forts</a>
         <a href="#rdc">Rez-de-chaussée</a>
         <a href="#chambres">Chambres d’hôtes</a>
+        <a href="#appartement">Appartement</a>
         <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -497,6 +498,31 @@
     <p class="car-counter" id="ch-counter">1 / 7</p>
   </section>
 
+  <!-- APPARTEMENT 2E ETAGE -->
+  <section id="appartement" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>🏔️ Appartement privatif (2e étage)</h2>
+        <p class="lead">Un appartement rénové sous les toits, lumineux, avec vues sur les toits du village et les montagnes — l’espace d’habitation idéal pour exploiter les chambres d’hôtes en habitant sur place.</p>
+      </div>
+
+      <div class="list">
+        <div class="li"><div class="ico">🛋️</div><div><b>Séjour lumineux</b><span>Grand espace de vie sous rampants avec cuisine ouverte équipée.</span></div></div>
+        <div class="li"><div class="ico">🛏️</div><div><b>3 chambres mansardées</b><span>Rénovées, avec puits de lumière.</span></div></div>
+        <div class="li"><div class="ico">🚿</div><div><b>Salle d’eau moderne</b><span>Douche, meuble vasque, rénovée récemment.</span></div></div>
+        <div class="li"><div class="ico">🧺</div><div><b>Buanderie</b><span>Espace lave-linge indépendant.</span></div></div>
+        <div class="li"><div class="ico">🏔️</div><div><b>Vues montagne</b><span>Fenêtres panoramiques sur les toits et les sommets de la vallée.</span></div></div>
+        <div class="li"><div class="ico">🔑</div><div><b>Indépendant</b><span>Partie privative séparée de l’activité chambres d’hôtes.</span></div></div>
+      </div>
+    </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" id="ap-prev" aria-label="Précédente">‹</button>
+      <div class="gallery" id="gallery-ap" aria-label="Photos appartement"></div>
+      <button class="car-btn next" id="ap-next" aria-label="Suivante">›</button>
+    </div>
+    <p class="car-counter" id="ap-counter">1 / 13</p>
+  </section>
+
   <!-- GALERIE -->
   <section id="galerie" class="section">
     <div class="wrap">
@@ -631,6 +657,14 @@
       document.getElementById("gallery-ch"), photosChambres, "photos-chambres",
       document.getElementById("ch-counter"),
       idx => openLb(idx, photosChambres, "photos-chambres")
+    );
+
+    // Carrousel Appartement (2e étage) — photos pro existantes + nouvelles
+    const photosAppartement = ["photos/M.Abrioux-105.jpg","photos/M.Abrioux-098.jpg","photos/M.Abrioux-100.jpg","photos/M.Abrioux-103.jpg","photos/M.Abrioux-081.jpg","photos/M.Abrioux-080.jpg","photos/M.Abrioux-089.jpg","photos/M.Abrioux-091.jpg","photos/M.Abrioux-093.jpg","photos/M.Abrioux-095.jpg","photos-appartement/appartement-2026-01.jpg","photos/M.Abrioux-088.jpg","photos/M.Abrioux-086.jpg"];
+    buildCarousel(
+      document.getElementById("gallery-ap"), photosAppartement, ".",
+      document.getElementById("ap-counter"),
+      idx => openLb(idx, photosAppartement, ".")
     );
 
     // Lightbox
