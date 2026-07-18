@@ -468,7 +468,7 @@
       <div class="gallery" id="gallery-rdc" aria-label="Photos espaces communs"></div>
       <button class="car-btn next" id="rdc-next" aria-label="Suivante">›</button>
     </div>
-    <p class="car-counter" id="rdc-counter">1 / 159</p>
+    <p class="car-counter" id="rdc-counter">1 / 21</p>
   </section>
 
   <!-- CHAMBRES D’HOTES -->
@@ -494,7 +494,7 @@
       <div class="gallery" id="gallery-ch" aria-label="Photos chambres d'hôtes"></div>
       <button class="car-btn next" id="ch-next" aria-label="Suivante">›</button>
     </div>
-    <p class="car-counter" id="ch-counter">1 / 159</p>
+    <p class="car-counter" id="ch-counter">1 / 7</p>
   </section>
 
   <!-- GALERIE -->
@@ -502,7 +502,7 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>📷 Galerie</h2>
-        <p class="lead">106 photos du bien — cliquez pour agrandir.</p>
+        <p class="lead">89 photos du bien — cliquez pour agrandir.</p>
       </div>
     </div>
     <div class="carousel-wrap">
@@ -510,7 +510,7 @@
       <div class="gallery" id="gallery" aria-label="Galerie photos"></div>
       <button class="car-btn next" id="car-next" aria-label="Suivante">›</button>
     </div>
-    <p class="car-counter" id="car-counter">1 / 106</p>
+    <p class="car-counter" id="car-counter">1 / 89</p>
   </section>
 
   <!-- LIGHTBOX -->
@@ -588,8 +588,7 @@
     // Année automatique
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Liste complète des photos (dossiers communs/chambres)
-    const allPhotos = ["CIMG1380.JPG","CIMG1391.JPG","CIMG1392.JPG","CIMG1394.JPG","CIMG1395.JPG","CIMG1396.JPG","CIMG1397.JPG","CIMG1398.JPG","CIMG1401.JPG","CIMG1402.JPG","CIMG1403.JPG","CIMG1404.JPG","DSCN3400.JPG","DSCN3400(1).JPG","DSCN3402.JPG","DSCN3402(1).JPG","DSCN3403.JPG","IMG_0071.JPG","IMG_0385.JPG","IMG_0386.JPG","IMG_0387.JPG","IMG_0420.JPG","IMG_1997.JPG","IMG_1999.JPG","IMG_20150714_192039.jpg","IMG_3076.JPG","IMG_3078.JPG","IMG_3080.JPG","IMG_3081.JPG","IMG_3082.JPG","IMG_3083.JPG","IMG_3084.JPG","IMG_3085.JPG","IMG_3086.JPG","IMG_3277.JPG","IMG_3278.JPG","IMG_3740.JPG","IMG_3741.JPG","IMG_3743.JPG","IMG_3746.JPG","M.Abrioux-001.jpg","M.Abrioux-002.jpg","M.Abrioux-003.jpg","M.Abrioux-004.jpg","M.Abrioux-005.jpg","M.Abrioux-006.jpg","M.Abrioux-007.jpg","M.Abrioux-008.jpg","M.Abrioux-009.jpg","M.Abrioux-010.jpg","M.Abrioux-011.jpg","M.Abrioux-012.jpg","M.Abrioux-013.jpg","M.Abrioux-014.jpg","M.Abrioux-015.jpg","M.Abrioux-016.jpg","M.Abrioux-017.jpg","M.Abrioux-018.jpg","M.Abrioux-019.jpg","M.Abrioux-020.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-033.jpg","M.Abrioux-034.jpg","M.Abrioux-035.jpg","M.Abrioux-036.jpg","M.Abrioux-037.jpg","M.Abrioux-038.jpg","M.Abrioux-039.jpg","M.Abrioux-040.jpg","M.Abrioux-041.jpg","M.Abrioux-042.jpg","M.Abrioux-043.jpg","M.Abrioux-044.jpg","M.Abrioux-045.jpg","M.Abrioux-046.jpg","M.Abrioux-047.jpg","M.Abrioux-048.jpg","M.Abrioux-049.jpg","M.Abrioux-050.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-054.jpg","M.Abrioux-055.jpg","M.Abrioux-056.jpg","M.Abrioux-057.jpg","M.Abrioux-058.jpg","M.Abrioux-059.jpg","M.Abrioux-060.jpg","M.Abrioux-061.jpg","M.Abrioux-062.jpg","M.Abrioux-063.jpg","M.Abrioux-064.jpg","M.Abrioux-065.jpg","M.Abrioux-066.jpg","M.Abrioux-067.jpg","M.Abrioux-068.jpg","M.Abrioux-069.jpg","M.Abrioux-070.jpg","M.Abrioux-071.jpg","M.Abrioux-072.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg","M.Abrioux-075.jpg","M.Abrioux-076.jpg","M.Abrioux-079.jpg","M.Abrioux-080.jpg","M.Abrioux-081.jpg","M.Abrioux-082.jpg","M.Abrioux-083.jpg","M.Abrioux-084.jpg","M.Abrioux-085.jpg","M.Abrioux-086.jpg","M.Abrioux-087.jpg","M.Abrioux-088.jpg","M.Abrioux-089.jpg","M.Abrioux-090.jpg","M.Abrioux-091.jpg","M.Abrioux-092.jpg","M.Abrioux-093.jpg","M.Abrioux-094.jpg","M.Abrioux-095.jpg","M.Abrioux-096.jpg","M.Abrioux-097.jpg","M.Abrioux-098.jpg","M.Abrioux-099.jpg","M.Abrioux-100.jpg","M.Abrioux-101.jpg","M.Abrioux-102.jpg","M.Abrioux-103.jpg","M.Abrioux-104.jpg","M.Abrioux-105.jpg","M.Abrioux-106.jpg","salle d eau (1).JPG","salle d eau (1)(1).JPG","salle d eau (1)(2).JPG","salle d eau.JPG"];
+
 
     // Fonction générique de carrousel
     function buildCarousel(galleryEl, files, folder, counterEl, onClickPhoto) {
@@ -613,23 +612,25 @@
       }, {passive:true});
     }
 
-    // Galerie principale (M.Abrioux uniquement)
-    const photos = Array.from({length: 106}, (_, i) => `M.Abrioux-${String(i+1).padStart(3,'0')}.jpg`);
+    // Galerie principale (M.Abrioux, hors photos chambres remplacées)
+    const photos = ["M.Abrioux-001.jpg","M.Abrioux-002.jpg","M.Abrioux-003.jpg","M.Abrioux-004.jpg","M.Abrioux-005.jpg","M.Abrioux-006.jpg","M.Abrioux-007.jpg","M.Abrioux-008.jpg","M.Abrioux-009.jpg","M.Abrioux-012.jpg","M.Abrioux-013.jpg","M.Abrioux-014.jpg","M.Abrioux-015.jpg","M.Abrioux-016.jpg","M.Abrioux-017.jpg","M.Abrioux-018.jpg","M.Abrioux-019.jpg","M.Abrioux-020.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-033.jpg","M.Abrioux-034.jpg","M.Abrioux-035.jpg","M.Abrioux-036.jpg","M.Abrioux-037.jpg","M.Abrioux-038.jpg","M.Abrioux-039.jpg","M.Abrioux-040.jpg","M.Abrioux-041.jpg","M.Abrioux-042.jpg","M.Abrioux-043.jpg","M.Abrioux-044.jpg","M.Abrioux-047.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-055.jpg","M.Abrioux-056.jpg","M.Abrioux-057.jpg","M.Abrioux-058.jpg","M.Abrioux-062.jpg","M.Abrioux-063.jpg","M.Abrioux-064.jpg","M.Abrioux-065.jpg","M.Abrioux-068.jpg","M.Abrioux-069.jpg","M.Abrioux-070.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg","M.Abrioux-075.jpg","M.Abrioux-076.jpg","M.Abrioux-079.jpg","M.Abrioux-080.jpg","M.Abrioux-081.jpg","M.Abrioux-082.jpg","M.Abrioux-083.jpg","M.Abrioux-084.jpg","M.Abrioux-085.jpg","M.Abrioux-086.jpg","M.Abrioux-087.jpg","M.Abrioux-088.jpg","M.Abrioux-089.jpg","M.Abrioux-090.jpg","M.Abrioux-091.jpg","M.Abrioux-092.jpg","M.Abrioux-093.jpg","M.Abrioux-094.jpg","M.Abrioux-095.jpg","M.Abrioux-096.jpg","M.Abrioux-097.jpg","M.Abrioux-098.jpg","M.Abrioux-099.jpg","M.Abrioux-100.jpg","M.Abrioux-101.jpg","M.Abrioux-102.jpg","M.Abrioux-103.jpg","M.Abrioux-104.jpg","M.Abrioux-105.jpg","M.Abrioux-106.jpg"];
     const gallery = document.getElementById("gallery");
     buildCarousel(gallery, photos, "photos", document.getElementById("car-counter"), idx => openLb(idx, photos, "photos"));
 
-    // Carrousel Espaces communs
+    // Carrousel Espaces communs — sélection (couloirs, salle petits-déjeuners, cuisines, lingerie, sauna)
+    const photosCommuns = ["M.Abrioux-001.jpg","M.Abrioux-006.jpg","M.Abrioux-019.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-055.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg"];
     buildCarousel(
-      document.getElementById("gallery-rdc"), allPhotos, "photos-communs",
+      document.getElementById("gallery-rdc"), photosCommuns, "photos",
       document.getElementById("rdc-counter"),
-      idx => openLb(idx, allPhotos, "photos-communs")
+      idx => openLb(idx, photosCommuns, "photos")
     );
 
-    // Carrousel Chambres d'hôtes
+    // Carrousel Chambres d'hôtes — photos actualisées 2026
+    const photosChambres = Array.from({length: 7}, (_, i) => `chambre-2026-0${i+1}.jpg`);
     buildCarousel(
-      document.getElementById("gallery-ch"), allPhotos, "photos-chambres",
+      document.getElementById("gallery-ch"), photosChambres, "photos-chambres",
       document.getElementById("ch-counter"),
-      idx => openLb(idx, allPhotos, "photos-chambres")
+      idx => openLb(idx, photosChambres, "photos-chambres")
     );
 
     // Lightbox
