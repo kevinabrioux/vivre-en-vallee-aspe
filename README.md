@@ -346,7 +346,7 @@
 
       <nav class="navlinks" aria-label="Navigation principale">
         <a href="#points-forts">Points forts</a>
-        <a href="#rdc">Rez-de-chaussée</a>
+        <a href="#rdc">RDC</a>
         <a href="#chambres">Chambres d’hôtes</a>
         <a href="#appartement">Appartement</a>
         <a href="#galerie">Galerie</a>
@@ -445,7 +445,7 @@
   <section id="rdc" class="section">
     <div class="wrap">
       <div class="titleRow">
-        <h2>🍽️ Espaces communs (rez-de-chaussée)</h2>
+        <h2>🍽️ RDC</h2>
         <p class="lead">Des espaces adaptés à l’accueil et à une activité de restauration légère / commerciale.</p>
       </div>
 
@@ -643,12 +643,12 @@
     const gallery = document.getElementById("gallery");
     buildCarousel(gallery, photos, "photos", document.getElementById("car-counter"), idx => openLb(idx, photos, "photos"));
 
-    // Carrousel Espaces communs — sélection (couloirs, salle petits-déjeuners, cuisines, lingerie, sauna)
-    const photosCommuns = ["M.Abrioux-001.jpg","M.Abrioux-006.jpg","M.Abrioux-019.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-055.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg"];
+    // Carrousel RDC — dossier dédié (couloirs, salle petits-déjeuners, cuisines, lingerie, sauna)
+    const photosRdc = ["M.Abrioux-001.jpg","M.Abrioux-006.jpg","M.Abrioux-019.jpg","M.Abrioux-021.jpg","M.Abrioux-022.jpg","M.Abrioux-023.jpg","M.Abrioux-024.jpg","M.Abrioux-025.jpg","M.Abrioux-026.jpg","M.Abrioux-027.jpg","M.Abrioux-028.jpg","M.Abrioux-029.jpg","M.Abrioux-030.jpg","M.Abrioux-031.jpg","M.Abrioux-032.jpg","M.Abrioux-051.jpg","M.Abrioux-052.jpg","M.Abrioux-053.jpg","M.Abrioux-055.jpg","M.Abrioux-073.jpg","M.Abrioux-074.jpg"];
     buildCarousel(
-      document.getElementById("gallery-rdc"), photosCommuns, "photos",
+      document.getElementById("gallery-rdc"), photosRdc, "photos-rdc",
       document.getElementById("rdc-counter"),
-      idx => openLb(idx, photosCommuns, "photos")
+      idx => openLb(idx, photosRdc, "photos-rdc")
     );
 
     // Carrousel Chambres d'hôtes — photos actualisées 2026
