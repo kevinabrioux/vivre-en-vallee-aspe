@@ -349,6 +349,7 @@
         <a href="#rdc">RDC</a>
         <a href="#chambres">Chambres d’hôtes</a>
         <a href="#appartement">Appartement</a>
+        <a href="#visite">Visite 360°</a>
         <a href="#galerie">Galerie</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -379,6 +380,7 @@
 
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px">
           <a class="btn primary" href="#contact">Recevoir photos & bilans</a>
+          <a class="btn" href="#visite">🎥 Visite virtuelle</a>
           <a class="btn" href="#galerie">Voir la galerie</a>
         </div>
 
@@ -521,6 +523,20 @@
       <button class="car-btn next" id="ap-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="ap-counter">1 / 29</p>
+  </section>
+
+  <!-- VISITE VIRTUELLE -->
+  <section id="visite" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>🎥 Visite virtuelle 360°</h2>
+        <p class="lead">Parcourez le bien comme si vous y étiez — naviguez de pièce en pièce directement ci-dessous.</p>
+      </div>
+      <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line)">
+        <iframe src="https://www.meilleurevisite.com/visit/21c939a1-1814-11ea-9031-00155d174307" title="Visite virtuelle du bien" style="position:absolute; inset:0; width:100%; height:100%; border:0" allowfullscreen allow="fullscreen; gyroscope; accelerometer"></iframe>
+      </div>
+      <p class="small" style="margin-top:10px"><a href="https://www.meilleurevisite.com/visit/21c939a1-1814-11ea-9031-00155d174307" target="_blank" rel="noopener">Ouvrir la visite en plein écran ↗</a></p>
+    </div>
   </section>
 
   <!-- GALERIE -->
