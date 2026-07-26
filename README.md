@@ -380,11 +380,13 @@
   <main id="top" class="hero">
     <div class="wrap grid">
       <section>
-        <div class="badge">🏡 Bien immobilier de caractère à vendre – <b>Bedous</b> (<span style="white-space:nowrap">Vallée d’Aspe</span>)</div>
-        <h1 class="h1">Un lieu de vie + une activité au cœur des Pyrénées-Atlantiques</h1>
+        <div class="badge">🏡 Bien immobilier de caractère à vendre – Bedous (<span style="white-space:nowrap">Vallée d’Aspe</span>)</div>
+        <h1 class="h1">Un lieu où vivre et entreprendre au cœur des Pyrénées-Atlantiques</h1>
         <p class="sub">
-          Situé au <b>centre du village</b> (commodités à pied), cet ensemble immobilier de <b>311 m²</b> offre une opportunité rare :
-          <b>habiter sur place</b> tout en générant <b>immédiatement des revenus</b> grâce à une activité de <b>chambres d’hôtes</b> déjà en place.
+          Au cœur de Bedous, village étape sur le chemin de Saint-Jacques-de-Compostelle, cette propriété de 311 m²
+          offre une opportunité rare de conjuguer art de vivre et activité touristique. Une propriété où habiter,
+          accueillir et entreprendre grâce à une activité de chambres d’hôtes déjà établie, dans la magnifique
+          vallée d’Aspe recherchée par les voyageurs en quête d’authenticité, de randonnée et de nature.
         </p>
 
         <div class="pillRow" aria-label="Résumé">
@@ -436,28 +438,28 @@
 
       <div class="cards">
         <article class="card">
-          <h3>📍 Emplacement central</h3>
-          <p>Au centre de Bedous, avec les commodités accessibles à pied.</p>
+          <h3>📍 Un emplacement privilégié</h3>
+          <p>Au cœur de Bedous, profitez de tous les commerces et services accessibles à pied.</p>
         </article>
         <article class="card">
-          <h3>🏔️ Cadre naturel exceptionnel</h3>
-          <p>Vallée d’Aspe, Pyrénées : un environnement très recherché par la clientèle.</p>
+          <h3>🏔️ Une destination prisée</h3>
+          <p>Au cœur de la vallée d’Aspe, dans les Pyrénées, un emplacement bénéficiant d’une forte attractivité touristique en toute saison.</p>
         </article>
         <article class="card">
-          <h3>💼 Revenus immédiats</h3>
-          <p>Chambres d’hôtes <b>toujours en activité</b>, activité touristique existante.</p>
+          <h3>💼 Une activité clé en main</h3>
+          <p>Chambres d’hôtes en activité, avec une exploitation opérationnelle dès la reprise.</p>
         </article>
         <article class="card">
-          <h3>🔄 Fort potentiel</h3>
-          <p>Reconversion possible : restaurant, café, concept-store, bien-être, etc.</p>
+          <h3>🔄 Un fort potentiel d’évolution</h3>
+          <p>La propriété se prête à de nombreux projets : restaurant, café, concept store, espace bien-être, atelier, etc.</p>
         </article>
         <article class="card">
-          <h3>🔑 Clé en main</h3>
-          <p>Structure déjà fonctionnelle, idéale pour démarrer sans attendre.</p>
+          <h3>🔑 Un projet prêt à vivre</h3>
+          <p>Une activité déjà installée, avec ses équipements professionnels, offrant une transition simple et sereine pour les futurs propriétaires.</p>
         </article>
         <article class="card">
-          <h3>🏠 Vie privée préservée</h3>
-          <p>Possibilité de conserver une partie privative pour l’habitation.</p>
+          <h3>🏠 Une vie privée préservée</h3>
+          <p>Un espace dédié à l’habitation permet de concilier confort personnel et activité professionnelle.</p>
         </article>
       </div>
     </div>
@@ -468,21 +470,21 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>🍽️ RDC</h2>
-        <p class="lead">Des espaces adaptés à l’accueil et à une activité de restauration légère / commerciale.</p>
+        <p class="lead">Un lieu prêt à accueillir votre projet.</p>
       </div>
 
       <div class="cards">
         <article class="card">
-          <h3>☕ Salle petits-déjeuners</h3>
-          <p>Espace dédié pour servir les clients et structurer l’activité.</p>
+          <h3>☕ Salle de petits-déjeuners</h3>
+          <p>Un espace aménagé pour accueillir les clients dans les meilleures conditions.</p>
         </article>
         <article class="card">
-          <h3>👩‍🍳 Cuisine pro avec extraction</h3>
-          <p>Base solide pour une offre de restauration légère ou un concept alimentaire.</p>
+          <h3>👩‍🍳 Cuisine professionnelle équipée</h3>
+          <p>Dotée d’un système d’extraction et vendue avec ses équipements professionnels, elle offre une base idéale pour développer une activité de restauration.</p>
         </article>
         <article class="card">
-          <h3>🧩 Polyvalence</h3>
-          <p>Possibilités : café, restaurant, concept-store, bien-être, atelier, etc.</p>
+          <h3>🧩 Un lieu aux multiples possibilités</h3>
+          <p>Idéal pour un café, un restaurant, un concept store, un espace bien-être, un atelier créatif…</p>
         </article>
       </div>
     </div>
@@ -498,18 +500,18 @@
   <section id="chambres" class="section">
     <div class="wrap">
       <div class="titleRow">
-        <h2>🛏️ Espace chambres d’hôtes (1er étage)</h2>
-        <p class="lead">Un espace chaleureux, apprécié par la clientèle, pensé pour le confort et l’exploitation.</p>
+        <h2>🛏️ Un espace chambres d’hôtes au 1er étage</h2>
+        <p class="lead">Un espace chaleureux, pensé pour le confort des hôtes et le bon fonctionnement de l’activité.</p>
       </div>
 
       <div class="list">
-        <div class="li"><div class="ico">🛌</div><div><b>4 chambres confortables</b><span>Disposition idéale pour accueillir des voyageurs.</span></div></div>
-        <div class="li"><div class="ico">🚿</div><div><b>Salles d’eau privatives</b><span>Confort et autonomie pour chaque chambre.</span></div></div>
-        <div class="li"><div class="ico">🚻</div><div><b>WC privatifs</b><span>Atout important pour la clientèle.</span></div></div>
-        <div class="li"><div class="ico">❄️</div><div><b>Climatisation</b><span>Confort été/hiver (selon équipements en place).</span></div></div>
-        <div class="li"><div class="ico">🧖‍♂️</div><div><b>Sauna</b><span>Différenciant, idéal après randonnée.</span></div></div>
-        <div class="li"><div class="ico">🧺</div><div><b>Lingerie</b><span>Organisation facilitée pour l’exploitation.</span></div></div>
-        <div class="li"><div class="ico">🛋️</div><div><b>Salon commun</b><span>Espace convivial pour les hôtes.</span></div></div>
+        <div class="li"><div class="ico">🛌</div><div><b>4 chambres pleines de charme</b><span>Un cadre chaleureux pour accueillir les voyageurs venus découvrir la vallée d’Aspe et ses paysages préservés.</span></div></div>
+        <div class="li"><div class="ico">🚿</div><div><b>Salles d’eau privatives</b><span>Un confort apprécié des voyageurs, offrant intimité et autonomie à chaque chambre.</span></div></div>
+        <div class="li"><div class="ico">🚻</div><div><b>Des sanitaires privatifs</b><span>Un confort apprécié des voyageurs et un véritable atout pour l’activité d’accueil.</span></div></div>
+        <div class="li"><div class="ico">❄️</div><div><b>Un confort en toute saison</b><span>Des équipements adaptés pour accueillir les voyageurs été comme hiver.</span></div></div>
+        <div class="li"><div class="ico">🧖‍♂️</div><div><b>Un espace bien-être avec sauna</b><span>Un véritable atout pour offrir aux voyageurs un moment de détente après une journée de randonnée ou de découverte de la vallée.</span></div></div>
+        <div class="li"><div class="ico">🧺</div><div><b>Un espace lingerie dédié</b><span>Un espace fonctionnel facilitant la gestion quotidienne de l’activité de chambres d’hôtes.</span></div></div>
+        <div class="li"><div class="ico">🛋️</div><div><b>Un salon commun chaleureux</b><span>Un espace convivial où les voyageurs peuvent se retrouver et se détendre, avec machine à café, réfrigérateur et télévision.</span></div></div>
       </div>
     </div>
     <div class="carousel-wrap">
@@ -524,17 +526,17 @@
   <section id="appartement" class="section">
     <div class="wrap">
       <div class="titleRow">
-        <h2>🏔️ Appartement privatif (2e étage)</h2>
-        <p class="lead">Un appartement rénové sous les toits, lumineux, avec vues sur les toits du village et les montagnes — l’espace d’habitation idéal pour exploiter les chambres d’hôtes en habitant sur place.</p>
+        <h2>🏔️ Un appartement avec vue sur la vallée (2e étage)</h2>
+        <p class="lead">Sous les toits du village, cet appartement rénové offre lumière, charme et vues dégagées sur les montagnes, pour vivre pleinement son projet d’accueil.</p>
       </div>
 
       <div class="list">
-        <div class="li"><div class="ico">🛋️</div><div><b>Séjour lumineux</b><span>Grand espace de vie sous rampants avec cuisine ouverte équipée.</span></div></div>
-        <div class="li"><div class="ico">🛏️</div><div><b>3 chambres mansardées</b><span>Rénovées, avec puits de lumière.</span></div></div>
-        <div class="li"><div class="ico">🚿</div><div><b>Salle d’eau moderne</b><span>Douche, meuble vasque, rénovée récemment.</span></div></div>
-        <div class="li"><div class="ico">🧺</div><div><b>Buanderie</b><span>Espace lave-linge indépendant.</span></div></div>
-        <div class="li"><div class="ico">🏔️</div><div><b>Vues montagne</b><span>Fenêtres panoramiques sur les toits et les sommets de la vallée.</span></div></div>
-        <div class="li"><div class="ico">🔑</div><div><b>Indépendant</b><span>Partie privative séparée de l’activité chambres d’hôtes.</span></div></div>
+        <div class="li"><div class="ico">🛋️</div><div><b>Un espace de vie lumineux et chaleureux</b><span>Un grand séjour sous rampants avec cuisine ouverte équipée, pensé pour un quotidien confortable.</span></div></div>
+        <div class="li"><div class="ico">🛏️</div><div><b>3 chambres pleines de charme</b><span>Des chambres mansardées rénovées, baignées de lumière naturelle grâce aux puits de lumière.</span></div></div>
+        <div class="li"><div class="ico">🚿</div><div><b>Une salle d’eau moderne</b><span>Un espace récemment rénové avec douche et meuble vasque, alliant confort et fonctionnalité au quotidien.</span></div></div>
+        <div class="li"><div class="ico">🧺</div><div><b>Un espace buanderie pratique</b><span>Un espace indépendant avec lave-linge, pensé pour faciliter l’organisation quotidienne.</span></div></div>
+        <div class="li"><div class="ico">🏔️</div><div><b>Des vues exceptionnelles sur la vallée</b><span>De grandes ouvertures offrent un panorama sur les toits du village et les sommets environnants.</span></div></div>
+        <div class="li"><div class="ico">🔑</div><div><b>Un équilibre entre vie privée et activité</b><span>Une partie habitation indépendante permettant de vivre sur place tout en accueillant les voyageurs en toute sérénité.</span></div></div>
       </div>
     </div>
     <div class="carousel-wrap">
@@ -550,7 +552,7 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>🎥 Visite virtuelle 360°</h2>
-        <p class="lead">Parcourez le bien comme si vous y étiez — naviguez de pièce en pièce directement ci-dessous.</p>
+        <p class="lead">Entrez, explorez, découvrez : visitez la propriété comme si vous étiez sur place grâce à la visite virtuelle ci-dessous.</p>
       </div>
       <div style="position:relative; width:100%; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line)">
         <iframe src="https://www.meilleurevisite.com/visit/21c939a1-1814-11ea-9031-00155d174307" title="Visite virtuelle du bien" style="position:absolute; inset:0; width:100%; height:100%; border:0" allowfullscreen allow="fullscreen; gyroscope; accelerometer"></iframe>
@@ -564,7 +566,7 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>📷 Galerie</h2>
-        <p class="lead">133 photos du bien — cliquez pour agrandir.</p>
+        <p class="lead">133 photos pour découvrir chaque détail du bien — explorez la galerie complète.</p>
       </div>
     </div>
     <div class="carousel-wrap">
@@ -601,18 +603,18 @@
   <section id="contact" class="cta">
     <div class="wrap">
       <div class="titleRow">
-        <h2>📞 Intéressé(e) ? Recevez infos, photos, bilans & planifiez une visite</h2>
-        <p class="lead">Remplissez le formulaire ci-dessous (envoi par email) ou appelez directement.</p>
+        <h2>📞 Envie d’en savoir plus ?</h2>
+        <p class="lead">Recevez le dossier complet du bien (photos, informations, éléments d’activité) et échangez avec nous pour organiser une visite — via le formulaire ci-dessous ou directement par téléphone.</p>
       </div>
 
       <div class="ctaBox">
         <div>
-          <h3 style="margin:0 0 8px">✅ Ce que vous pouvez demander</h3>
+          <h3 style="margin:0 0 8px">✅ Un dossier complet à votre disposition</h3>
           <div class="list">
-            <div class="li"><div class="ico">📸</div><div><b>Dossier photos</b><span>Intérieur / extérieur / plans si disponibles</span></div></div>
-            <div class="li"><div class="ico">📊</div><div><b>Bilans d’activité</b><span>Chiffres & informations utiles</span></div></div>
-            <div class="li"><div class="ico">🗓️</div><div><b>Visite</b><span>Proposition de créneaux</span></div></div>
-            <div class="li"><div class="ico">💬</div><div><b>Questions</b><span>Potentiel commercial, travaux, organisation, etc.</span></div></div>
+            <div class="li"><div class="ico">📸</div><div><b>Un dossier photos complet</b><span>Découvrez les espaces intérieurs, extérieurs et les plans de la propriété.</span></div></div>
+            <div class="li"><div class="ico">📊</div><div><b>Les éléments clés de l’activité</b><span>Chiffres, bilans et informations essentielles pour vous accompagner dans votre projet.</span></div></div>
+            <div class="li"><div class="ico">🗓️</div><div><b>Venez découvrir la propriété</b><span>Nous vous proposons un rendez-vous selon vos disponibilités.</span></div></div>
+            <div class="li"><div class="ico">💬</div><div><b>Parlons de votre projet</b><span>Nous répondons à vos questions pour vous aider à vous projeter dans cette propriété.</span></div></div>
           </div>
 
           <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap">
@@ -643,7 +645,7 @@
               placeholder="Bonjour, je souhaite recevoir les photos / bilans et organiser une visite. Mes disponibilités sont…"></textarea>
           </div>
 
-          <button class="btn primary" type="submit">Envoyer la demande</button>
+          <button class="btn primary" type="submit">Envoyer ma demande</button>
           <p class="small" style="margin:0">
             En cliquant sur “Envoyer”, votre logiciel de messagerie s’ouvre avec votre demande pré-remplie.
           </p>
