@@ -2,8 +2,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bien immobilier à vendre – Bedous (Vallée d’Aspe) | 311 m² + chambres d’hôtes</title>
-  <meta name="description" content="Ensemble immobilier de 311 m² au centre de Bedous (Vallée d’Aspe). Chambres d’hôtes en activité avec revenus immédiats, potentiel commercial et partie privative." />
+  <title>Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées) | 311 m², activité clé en main</title>
+  <meta name="description" content="À vendre à Bedous, village étape du chemin de Saint-Jacques-de-Compostelle : ensemble immobilier de 311 m² avec chambres d’hôtes en activité, appartement privatif et potentiel commercial. Nature, randonnée et tranquillité au cœur de la vallée d’Aspe (Pyrénées)." />
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Police serif (retours Natalie : Garamond) -->
@@ -12,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)" />
-  <meta property="og:description" content="311 m², chambres d’hôtes en activité, revenus immédiats, fort potentiel de reconversion commerciale, centre village." />
+  <meta property="og:title" content="Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées)" />
+  <meta property="og:description" content="311 m², chambres d’hôtes en activité sur le chemin de Saint-Jacques-de-Compostelle, appartement privatif, fort potentiel commercial — au cœur de la vallée d’Aspe." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://kevinabrioux.github.io/vivre-en-vallee-aspe/photos-appartement/M.Abrioux-081.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -23,15 +23,18 @@
   {
     "@context":"https://schema.org",
     "@type":"RealEstateListing",
-    "name":"Bien immobilier de caractère à vendre – Bedous (Vallée d’Aspe)",
-    "description":"Ensemble immobilier de 311 m² au centre de Bedous. DPE classe C, GES classe B. Chambres d’hôtes en activité et potentiel commercial, avec possibilité d’habitation privative.",
+    "name":"Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées)",
+    "description":"Ensemble immobilier de 311 m² au centre de Bedous, village étape du chemin de Saint-Jacques-de-Compostelle. DPE classe C, GES classe B. Chambres d’hôtes en activité, appartement privatif et potentiel commercial, au cœur de la vallée d’Aspe : nature, randonnée, tranquillité.",
     "address":{
       "@type":"PostalAddress",
+      "streetAddress":"16 rue Gambetta",
       "addressLocality":"Bedous",
+      "postalCode":"64490",
       "addressRegion":"Pyrénées-Atlantiques",
       "addressCountry":"FR"
     },
-    "url":""
+    "image":"https://kevinabrioux.github.io/vivre-en-vallee-aspe/photos-appartement/M.Abrioux-081.jpg",
+    "url":"https://kevinabrioux.github.io/vivre-en-vallee-aspe/"
   }
   </script>
 
@@ -369,6 +372,7 @@
         <a href="#appartement">Appartement</a>
         <a href="#visite">Visite 360°</a>
         <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
         <a href="#carte">Carte</a>
       </nav>
 
@@ -490,7 +494,7 @@
     </div>
     <div class="carousel-wrap">
       <button class="car-btn prev" id="rdc-prev" aria-label="Précédente">‹</button>
-      <div class="gallery" id="gallery-rdc" aria-label="Photos espaces communs"></div>
+      <div class="gallery" id="gallery-rdc" aria-label="Rez-de-chaussée : salle de petits-déjeuners et cuisine professionnelle à Bedous"></div>
       <button class="car-btn next" id="rdc-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="rdc-counter">1 / 12</p>
@@ -516,7 +520,7 @@
     </div>
     <div class="carousel-wrap">
       <button class="car-btn prev" id="ch-prev" aria-label="Précédente">‹</button>
-      <div class="gallery" id="gallery-ch" aria-label="Photos chambres d'hôtes"></div>
+      <div class="gallery" id="gallery-ch" aria-label="Chambres d'hôtes en vallée d'Aspe : chambres, sauna et salles d'eau"></div>
       <button class="car-btn next" id="ch-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="ch-counter">1 / 27</p>
@@ -541,7 +545,7 @@
     </div>
     <div class="carousel-wrap">
       <button class="car-btn prev" id="ap-prev" aria-label="Précédente">‹</button>
-      <div class="gallery" id="gallery-ap" aria-label="Photos appartement"></div>
+      <div class="gallery" id="gallery-ap" aria-label="Appartement sous les toits avec vue montagne à Bedous"></div>
       <button class="car-btn next" id="ap-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="ap-counter">1 / 29</p>
@@ -571,7 +575,7 @@
     </div>
     <div class="carousel-wrap">
       <button class="car-btn prev" id="car-prev" aria-label="Précédente">‹</button>
-      <div class="gallery" id="gallery" aria-label="Galerie photos"></div>
+      <div class="gallery" id="gallery" aria-label="Galerie du bien à vendre à Bedous, vallée d'Aspe"></div>
       <button class="car-btn next" id="car-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="car-counter">1 / 133</p>
@@ -585,12 +589,43 @@
     <button id="lb-next" aria-label="Suivante">›</button>
   </div>
 
+  <!-- AVIS (retours Natalie 5/5 : réputation du lieu = garantie d'une activité clé en main.
+       Extraits courts d'avis publics TripAdvisor, cités avec attribution — fiche : tripadvisor.fr, « Chez Michel Chambres D'Hôtes », Bedous) -->
+  <section id="avis" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>💬 Ils ont séjourné ici</h2>
+        <p class="lead">La réputation des chambres d’hôtes est déjà faite : une clientèle fidèle et d’excellentes notes sur les plateformes de réservation — la garantie de reprendre une activité clé en main.</p>
+      </div>
+
+      <div class="pillRow" style="margin:0 0 22px" aria-label="Notes des plateformes">
+        <span class="pill">⭐ <b>4,8 / 5</b>&nbsp;sur TripAdvisor</span>
+        <span class="pill">⭐ <b>9,1 / 10</b>&nbsp;« Superbe » sur Booking.com (165 avis)</span>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <p style="font-style:italic">« Une excellente adresse où l’on a plaisir à revenir. »</p>
+          <p class="small" style="margin-top:10px">Marie — TripAdvisor, 2023</p>
+        </article>
+        <article class="card">
+          <p style="font-style:italic">« On s’est senti comme à la maison ! »</p>
+          <p class="small" style="margin-top:10px">Magali — TripAdvisor, 2019</p>
+        </article>
+        <article class="card">
+          <p style="font-style:italic">« Nous reviendrions sans aucun souci, lors d’un prochain passage en vallée d’Aspe. »</p>
+          <p class="small" style="margin-top:10px">Bernie — TripAdvisor, 2017</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- CARTE (retours Natalie 2/5 : fil rouge … → Carte → Contact) -->
   <section id="carte" class="section">
     <div class="wrap">
       <div class="titleRow">
         <h2>🗺️ Où se situe le bien ?</h2>
-        <p class="lead">Au centre de Bedous, village principal de la vallée d’Aspe (Pyrénées-Atlantiques), sur l’axe Oloron-Sainte-Marie ↔ Espagne et sur le chemin de Saint-Jacques-de-Compostelle (voie d’Arles).</p>
+        <p class="lead">Au centre de Bedous, village principal de la vallée d’Aspe (Pyrénées-Atlantiques), sur l’axe Oloron-Sainte-Marie ↔ Espagne et sur le chemin de Saint-Jacques-de-Compostelle (voie d’Arles) — une étape appréciée des pèlerins, des randonneurs et des amoureux de la nature.</p>
       </div>
       <div style="position:relative; width:100%; aspect-ratio:16/8; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line)">
         <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.6555%2C42.9750%2C-0.5500%2C43.0250&layer=mapnik&marker=43.0002%2C-0.6028" title="Carte — Bedous, vallée d’Aspe" style="position:absolute; inset:0; width:100%; height:100%; border:0" loading="lazy"></iframe>
@@ -657,7 +692,7 @@
   <footer>
     <div class="wrap" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center">
       <div class="small">© <span id="year"></span> • Bien immobilier – Bedous (Vallée d’Aspe)</div>
-      <div class="small">Bedous · Vallée d’Aspe · Pyrénées-Atlantiques</div>
+      <div class="small">Chambres d’hôtes & habitation · Bedous · Vallée d’Aspe · Pyrénées-Atlantiques</div>
     </div>
   </footer>
 
@@ -674,7 +709,7 @@
         fig.className = "g";
         const img = document.createElement("img");
         img.src = `${folder}/${name}`;
-        img.alt = `Photo ${idx+1}`;
+        img.alt = `${galleryEl.getAttribute("aria-label") || "Photo"} — photo ${idx+1}`;
         img.loading = "lazy";
         fig.appendChild(img);
         if(onClickPhoto) fig.addEventListener("click", () => onClickPhoto(idx));
