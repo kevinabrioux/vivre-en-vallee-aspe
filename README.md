@@ -177,11 +177,12 @@
     }
     .kpi b{display:block; font-size:15px}
     .kpi span{display:block; color:var(--muted); font-size:14px}
-    .section{padding: 26px 0}
+    /* Retours Natalie (2/5) : sections démarquées par de grands espaces blancs + fine ligne */
+    .section{padding: clamp(48px, 7vw, 84px) 0; border-top:1px solid var(--line)}
     .titleRow{
-      display:flex; align-items:flex-end; justify-content:space-between; gap:14px; flex-wrap:wrap;
-      margin-bottom:14px;
+      margin-bottom:28px;
     }
+    .titleRow .lead{margin-top:10px}
     h2{margin:0; font-size: clamp(24px, 3vw, 32px); letter-spacing:0; color:var(--navy)}
     .lead{margin:0; color:var(--muted); max-width:75ch; font-size:17px}
     .cards{
@@ -203,6 +204,9 @@
     }
     .card h3{margin:0 0 8px; font-size:20px; color:var(--navy)}
     .card p{margin:0; color:var(--muted); font-size:16px}
+    a.card{display:block; text-decoration:none}
+    a.card:hover{transform:translateY(-2px); transition:transform .15s ease}
+    .subhead{margin:48px 0 6px; font-size:22px; color:var(--navy)}
     .list{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -223,7 +227,7 @@
     .carousel-wrap{
       position: relative;
       max-width: var(--max);
-      margin: 0 auto;
+      margin: 28px auto 0;
     }
     .gallery{
       display: flex;
@@ -295,7 +299,8 @@
     #lb-prev{ left:14px; }
     #lb-next{ right:14px; }
     .cta{
-      padding: 26px 0 48px;
+      padding: clamp(48px, 7vw, 84px) 0 64px;
+      border-top:1px solid var(--line);
     }
     .ctaBox{
       border-radius: calc(var(--radius) + 6px);
@@ -357,16 +362,16 @@
       </a>
 
       <nav class="navlinks" aria-label="Navigation principale">
-        <a href="#points-forts">Points forts</a>
+        <a href="#presentation">Présentation</a>
         <a href="#rdc">RDC</a>
         <a href="#chambres">Chambres d’hôtes</a>
         <a href="#appartement">Appartement</a>
         <a href="#visite">Visite 360°</a>
         <a href="#galerie">Galerie</a>
-        <a href="#contact">Contact</a>
+        <a href="#carte">Carte</a>
       </nav>
 
-      <a class="btn primary" href="#contact">📞 Demander infos / visite</a>
+      <a class="btn primary" style="white-space:nowrap" href="#contact">📞 Demander infos / visite</a>
     </div>
   </header>
 
@@ -374,7 +379,7 @@
   <main id="top" class="hero">
     <div class="wrap grid">
       <section>
-        <div class="badge">🏡 Bien immobilier de caractère à vendre – <b>Bedous</b> (Vallée d’Aspe)</div>
+        <div class="badge">🏡 Bien immobilier de caractère à vendre – <b>Bedous</b> (<span style="white-space:nowrap">Vallée d’Aspe</span>)</div>
         <h1 class="h1">Un lieu de vie + une activité au cœur des Pyrénées-Atlantiques</h1>
         <p class="sub">
           Situé au <b>centre du village</b> (commodités à pied), cet ensemble immobilier de <b>311 m²</b> offre une opportunité rare :
@@ -382,49 +387,51 @@
         </p>
 
         <div class="pillRow" aria-label="Résumé">
-          <span class="pill">📍 Centre village</span>
+          <span class="pill">📍 Bedous, centre village</span>
           <span class="pill">🏠 311 m²</span>
           <span class="pill">⚡ DPE C · GES B</span>
-          <span class="pill">💼 Activité en cours</span>
+          <span class="pill">🏡 Habitation + chambres d’hôtes en activité</span>
           <span class="pill">🔄 Potentiel commerce</span>
           <span class="pill">🔑 Projet clé en main</span>
         </div>
 
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px">
           <a class="btn primary" href="#contact">Recevoir photos & bilans</a>
-          <a class="btn" href="#visite">🎥 Visite virtuelle</a>
-          <a class="btn" href="#galerie">Voir la galerie</a>
         </div>
 
       </section>
 
       <aside class="heroCard" aria-label="Aperçu">
-        <div class="heroImg" role="img" aria-label="Photo principale du bien (à remplacer)"></div>
-        <div class="heroMeta">
-          <div class="kpi">
-            <b>Surface</b>
-            <span>311 m² · DPE C</span>
-          </div>
-          <div class="kpi">
-            <b>Usage</b>
-            <span>Habitation + activité</span>
-          </div>
-          <div class="kpi">
-            <b>Localisation</b>
-            <span>Bedous, Vallée d’Aspe</span>
-          </div>
-        </div>
+        <div class="heroImg" role="img" aria-label="Photo principale du bien"></div>
       </aside>
     </div>
   </main>
 
-  <!-- POINTS FORTS -->
-  <section id="points-forts" class="section">
+  <!-- PRESENTATION (retours Natalie 2/5 : fil rouge — résumé des trois niveaux + vallée d'Aspe) -->
+  <section id="presentation" class="section">
     <div class="wrap">
       <div class="titleRow">
-        <h2>✨ Les points forts</h2>
-        <p class="lead">Un bien rare pour un projet de vie, touristique ou commercial, avec un démarrage immédiat.</p>
+        <h2>🏔️ Présentation</h2>
+        <p class="lead">Au cœur de la vallée d’Aspe, dans les Pyrénées, cet ensemble immobilier situé au centre de Bedous se déploie sur trois niveaux — détaillés plus bas dans l’ordre de la visite.</p>
       </div>
+
+      <div class="cards">
+        <a class="card" href="#rdc">
+          <h3>🍽️ Rez-de-chaussée</h3>
+          <p>Salle de petits-déjeuners, cuisine professionnelle avec extraction et espaces polyvalents à fort potentiel commercial.</p>
+        </a>
+        <a class="card" href="#chambres">
+          <h3>🛏️ 1er étage — chambres d’hôtes</h3>
+          <p>4 chambres en activité, salles d’eau et WC privatifs, sauna et salon commun.</p>
+        </a>
+        <a class="card" href="#appartement">
+          <h3>🏔️ 2e étage — appartement privatif</h3>
+          <p>Un appartement rénové sous les toits, lumineux, avec vues sur les montagnes.</p>
+        </a>
+      </div>
+
+      <h3 class="subhead" id="points-forts">✨ Les points forts</h3>
+      <p class="lead" style="margin:0 0 20px">Un bien rare pour un projet de vie, touristique ou commercial, avec un démarrage immédiat.</p>
 
       <div class="cards">
         <article class="card">
@@ -575,6 +582,20 @@
     <button id="lb-next" aria-label="Suivante">›</button>
   </div>
 
+  <!-- CARTE (retours Natalie 2/5 : fil rouge … → Carte → Contact) -->
+  <section id="carte" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>🗺️ Où se situe le bien ?</h2>
+        <p class="lead">Au centre de Bedous, village principal de la vallée d’Aspe (Pyrénées-Atlantiques), sur l’axe Oloron-Sainte-Marie ↔ Espagne et sur le chemin de Saint-Jacques-de-Compostelle (voie d’Arles).</p>
+      </div>
+      <div style="position:relative; width:100%; aspect-ratio:16/8; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line)">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.6555%2C42.9750%2C-0.5500%2C43.0250&layer=mapnik&marker=43.0002%2C-0.6028" title="Carte — Bedous, vallée d’Aspe" style="position:absolute; inset:0; width:100%; height:100%; border:0" loading="lazy"></iframe>
+      </div>
+      <p class="small" style="margin-top:10px"><a href="https://www.openstreetmap.org/?mlat=43.0002&mlon=-0.6028#map=14/43.0002/-0.6028" target="_blank" rel="noopener">Ouvrir la carte en grand ↗</a></p>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="cta">
     <div class="wrap">
@@ -623,8 +644,7 @@
 
           <button class="btn primary" type="submit">Envoyer la demande</button>
           <p class="small" style="margin:0">
-            En cliquant sur “Envoyer”, votre logiciel email s’ouvrira (envoi via <code>mailto:</code>).
-            Pour un vrai envoi sans client mail, il faudra brancher un service (Formspree, Netlify Forms, etc.).
+            En cliquant sur “Envoyer”, votre logiciel de messagerie s’ouvre avec votre demande pré-remplie.
           </p>
         </form>
       </div>
@@ -634,7 +654,7 @@
   <footer>
     <div class="wrap" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center">
       <div class="small">© <span id="year"></span> • Bien immobilier – Bedous (Vallée d’Aspe)</div>
-      <div class="small">Site statique prêt pour GitHub Pages</div>
+      <div class="small">Bedous · Vallée d’Aspe · Pyrénées-Atlantiques</div>
     </div>
   </footer>
 
