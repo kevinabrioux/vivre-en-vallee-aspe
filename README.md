@@ -2,8 +2,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées) | 311 m², activité clé en main</title>
-  <meta name="description" content="À vendre à Bedous, village étape du chemin de Saint-Jacques-de-Compostelle : ensemble immobilier de 311 m² avec chambres d’hôtes en activité, appartement privatif et potentiel commercial. Nature, randonnée et tranquillité au cœur de la vallée d’Aspe (Pyrénées)." />
+  <title>Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées) | 266 m², activité clé en main</title>
+  <meta name="description" content="À vendre à Bedous, village étape du chemin de Saint-Jacques-de-Compostelle : ensemble immobilier de 266 m² avec chambres d’hôtes en activité, appartement privatif et potentiel commercial. Nature, randonnée et tranquillité au cœur de la vallée d’Aspe (Pyrénées)." />
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Police serif (retours Natalie : Garamond) -->
@@ -13,7 +13,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées)" />
-  <meta property="og:description" content="311 m², chambres d’hôtes en activité sur le chemin de Saint-Jacques-de-Compostelle, appartement privatif, fort potentiel commercial — au cœur de la vallée d’Aspe." />
+  <meta property="og:description" content="266 m², chambres d’hôtes en activité sur le chemin de Saint-Jacques-de-Compostelle, appartement privatif, fort potentiel commercial — au cœur de la vallée d’Aspe." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://kevinabrioux.github.io/vivre-en-vallee-aspe/photos/panorama-vallee-aspe.jpg" />
   <meta property="og:locale" content="fr_FR" />
@@ -31,7 +31,7 @@
     "@context":"https://schema.org",
     "@type":"RealEstateListing",
     "name":"Chambres d’hôtes à vendre – Bedous, vallée d’Aspe (Pyrénées)",
-    "description":"Ensemble immobilier de 311 m² au centre de Bedous, village étape du chemin de Saint-Jacques-de-Compostelle. DPE classe C, GES classe B. Chambres d’hôtes en activité, appartement privatif et potentiel commercial, au cœur de la vallée d’Aspe : nature, randonnée, tranquillité.",
+    "description":"Ensemble immobilier de 266 m² au centre de Bedous, village étape du chemin de Saint-Jacques-de-Compostelle. DPE classe C, GES classe B. Chambres d’hôtes en activité, appartement privatif et potentiel commercial, au cœur de la vallée d’Aspe : nature, randonnée, tranquillité.",
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"16 rue Gambetta",
@@ -401,7 +401,7 @@
         <div class="badge">🏡 Bien immobilier de caractère à vendre – Bedous (<span style="white-space:nowrap">Vallée d’Aspe</span>)</div>
         <h1 class="h1">Un lieu où vivre et entreprendre au cœur des Pyrénées-Atlantiques</h1>
         <p class="sub">
-          Au cœur de Bedous, village étape sur le chemin de Saint-Jacques-de-Compostelle, cette propriété de 311 m²
+          Au cœur de Bedous, village étape sur le chemin de Saint-Jacques-de-Compostelle, cette propriété de 266 m²
           offre une opportunité rare de conjuguer art de vivre et activité touristique. Une propriété où habiter,
           accueillir et entreprendre grâce à une activité de chambres d’hôtes déjà établie, dans la magnifique
           vallée d’Aspe recherchée par les voyageurs en quête d’authenticité, de randonnée et de nature.
@@ -409,7 +409,7 @@
 
         <div class="pillRow" aria-label="Résumé">
           <span class="pill">📍 Bedous, centre village</span>
-          <span class="pill">🏠 311 m²</span>
+          <span class="pill">🏠 266 m² Carrez</span>
           <span class="pill">⚡ DPE C · GES B</span>
           <span class="pill">🏡 Habitation + chambres d’hôtes en activité</span>
           <span class="pill">🔄 Potentiel commerce</span>
@@ -434,6 +434,7 @@
       <div class="titleRow">
         <h2>🏔️ Présentation</h2>
         <p class="lead">Au cœur de la vallée d’Aspe, dans les Pyrénées, cet ensemble immobilier situé au centre de Bedous se déploie sur trois niveaux — détaillés plus bas dans l’ordre de la visite.</p>
+        <p class="lead" style="font-size:15px; margin-top:10px">266 m² au sens de la loi Carrez ; la surface de référence du diagnostic de performance énergétique, qui inclut les combles aménagés sous rampants, est de 311 m².</p>
       </div>
 
       <div class="cards">
