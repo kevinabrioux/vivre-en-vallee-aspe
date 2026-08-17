@@ -207,6 +207,35 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
+    /* Section « Se projeter » : 2 visuels IA côte à côte */
+    .projGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 6px;
+    }
+    @media (max-width: 900px){
+      .projGrid{grid-template-columns: 1fr}
+    }
+    .projGrid figure{
+      margin:0;
+      background: var(--card);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: 0 8px 24px rgba(10,18,55,.07);
+    }
+    .projGrid img{
+      width:100%; display:block; aspect-ratio: 4/3; object-fit:cover;
+    }
+    .projGrid figcaption{
+      padding: 14px 16px;
+    }
+    .projGrid figcaption b{display:block; margin-bottom:4px; color:var(--navy)}
+    .projGrid figcaption span{color:var(--muted); font-size:15px}
+    .projNote{
+      margin-top:14px; color:var(--muted); font-size:14px; font-style:italic;
+    }
     @media (max-width: 900px){
       .cards{grid-template-columns: 1fr}
       .heroMeta{grid-template-columns:1fr}
@@ -513,6 +542,33 @@
       <button class="car-btn next" id="rdc-next" aria-label="Suivante">›</button>
     </div>
     <p class="car-counter" id="rdc-counter">1 / 12</p>
+  </section>
+
+  <!-- Se projeter : visuels IA du potentiel commercial du RDC -->
+  <section id="projection" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>💡 Et demain ? Imaginez…</h2>
+        <p class="lead">L'immeuble est déclaré à usage d'habitation et de commerce : le rez-de-chaussée, ancien bar-restaurant avec magasin, peut redevenir un lieu ouvert sur le village. Deux exemples parmi bien d'autres, imaginés à partir des volumes existants.</p>
+      </div>
+      <div class="projGrid">
+        <figure>
+          <img src="photos/projection-restaurant.jpg" alt="Projection par intelligence artificielle : la salle du rez-de-chaussée aménagée en restaurant chaleureux" loading="lazy" />
+          <figcaption>
+            <b>🍽️ Un restaurant ou une table d'hôtes</b>
+            <span>La salle du rez-de-chaussée et sa cuisine professionnelle se prêtent à une table ouverte aux hôtes comme aux gens de passage — sur le chemin de Saint-Jacques, la clientèle est là.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="photos/projection-epicerie.jpg" alt="Projection par intelligence artificielle : l'espace magasin aménagé en épicerie fine de produits locaux" loading="lazy" />
+          <figcaption>
+            <b>🧀 Une épicerie fine de produits de la vallée</b>
+            <span>Fromages d'Aspe et d'Ossau, vins, miels, charcuteries : l'ancien magasin retrouverait sa vocation de commerce, au centre du bourg et sans concurrence directe.</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="projNote">Visuels générés par intelligence artificielle à partir des espaces existants — simples suggestions d'aménagement, non contractuelles. L'état réel des lieux est visible dans les photos et la visite virtuelle 360°.</p>
+    </div>
   </section>
 
   <!-- CHAMBRES D’HOTES -->
