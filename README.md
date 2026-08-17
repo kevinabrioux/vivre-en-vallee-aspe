@@ -563,7 +563,7 @@
           <img src="photos/projection-epicerie.jpg" alt="Projection par intelligence artificielle : l'espace magasin aménagé en épicerie fine de produits locaux" loading="lazy" />
           <figcaption>
             <b>🧀 Une épicerie fine de produits de la vallée</b>
-            <span>Fromages d'Aspe et d'Ossau, vins, miels, charcuteries : l'ancien magasin retrouverait sa vocation de commerce, au centre du bourg et sans concurrence directe.</span>
+            <span>Fromages d'Aspe et d'Ossau, vins, miels, charcuteries : l'ancien magasin retrouverait sa vocation de commerce, au centre du bourg, sur le passage des pèlerins et des visiteurs de la vallée.</span>
           </figcaption>
         </figure>
       </div>
