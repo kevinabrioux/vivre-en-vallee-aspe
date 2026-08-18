@@ -210,7 +210,7 @@
     /* Section « Se projeter » : 2 visuels IA côte à côte */
     .projGrid{
       display:grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 14px;
       margin-top: 6px;
     }
@@ -549,7 +549,7 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>💡 Et demain ? Imaginez…</h2>
-        <p class="lead">L'immeuble est déclaré à usage d'habitation et de commerce : le rez-de-chaussée, ancien bar-restaurant avec magasin, peut redevenir un lieu ouvert sur le village. Deux exemples parmi bien d'autres, imaginés à partir des volumes existants.</p>
+        <p class="lead">L'immeuble est déclaré à usage d'habitation et de commerce : le rez-de-chaussée, ancien bar-restaurant avec magasin, peut redevenir un lieu ouvert sur le village. Trois exemples parmi bien d'autres, imaginés à partir des volumes existants.</p>
       </div>
       <div class="projGrid">
         <figure>
@@ -560,10 +560,17 @@
           </figcaption>
         </figure>
         <figure>
-          <img src="photos/projection-epicerie.jpg" alt="Projection par intelligence artificielle : l'espace magasin aménagé en épicerie fine de produits locaux" loading="lazy" />
+          <img src="photos/projection-montagne.jpg" alt="Projection par intelligence artificielle : l'espace magasin aménagé en boutique d'équipement de montagne et de randonnée" loading="lazy" />
           <figcaption>
-            <b>🧀 Une épicerie fine de produits de la vallée</b>
-            <span>Fromages d'Aspe et d'Ossau, vins, miels, charcuteries : l'ancien magasin retrouverait sa vocation de commerce, au centre du bourg, sur le passage des pèlerins et des visiteurs de la vallée.</span>
+            <b>🥾 Une boutique d'équipement montagne & randonnée</b>
+            <span>Entre le Parc national des Pyrénées, le GR 10 et le chemin de Saint-Jacques, Bedous voit passer randonneurs et pèlerins toute la saison — le magasin d'origine retrouverait sa vocation.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="photos/projection-cycles.jpg" alt="Projection par intelligence artificielle : l'espace magasin aménagé en atelier-boutique de vélos" loading="lazy" />
+          <figcaption>
+            <b>🚲 Un atelier-boutique de cycles</b>
+            <span>Réparation, location, vente : entre le col du Somport et les grands cols du Tour, la vallée d'Aspe voit défiler cyclotouristes et vététistes — un service qui manque aujourd'hui dans le bourg.</span>
           </figcaption>
         </figure>
       </div>
