@@ -677,8 +677,9 @@
       </div>
 
       <div class="pillRow" style="margin:0 0 22px" aria-label="Notes des plateformes">
-        <span class="pill">⭐ <b>4,8 / 5</b>&nbsp;sur TripAdvisor</span>
+        <span class="pill">⭐ <b>4,8 / 5</b>&nbsp;« Excellent » sur Google (119 avis)</span>
         <span class="pill">⭐ <b>9,1 / 10</b>&nbsp;« Superbe » sur Booking.com (165 avis)</span>
+        <span class="pill">⭐ <b>4,8 / 5</b>&nbsp;sur TripAdvisor</span>
       </div>
 
       <div class="cards">
