@@ -684,16 +684,16 @@
 
       <div class="cards">
         <article class="card">
+          <p style="font-style:italic">« Si vous avez l’occasion, foncez, vous y serez reçus comme des princes ! »</p>
+          <p class="small" style="margin-top:10px">Raphaelle, de passage sur sa traversée des Pyrénées à vélo — Google, août 2026</p>
+        </article>
+        <article class="card">
+          <p style="font-style:italic">« Annie et Michel sont aux petits soins et la chambre est impeccable. »</p>
+          <p class="small" style="margin-top:10px">Kim — Google, août 2026</p>
+        </article>
+        <article class="card">
           <p style="font-style:italic">« Une excellente adresse où l’on a plaisir à revenir. »</p>
           <p class="small" style="margin-top:10px">Marie — TripAdvisor, 2023</p>
-        </article>
-        <article class="card">
-          <p style="font-style:italic">« On s’est senti comme à la maison ! »</p>
-          <p class="small" style="margin-top:10px">Magali — TripAdvisor, 2019</p>
-        </article>
-        <article class="card">
-          <p style="font-style:italic">« Nous reviendrions sans aucun souci, lors d’un prochain passage en vallée d’Aspe. »</p>
-          <p class="small" style="margin-top:10px">Bernie — TripAdvisor, 2017</p>
         </article>
       </div>
     </div>
