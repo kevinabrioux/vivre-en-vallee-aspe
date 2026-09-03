@@ -673,7 +673,7 @@
     <div class="wrap">
       <div class="titleRow">
         <h2>💬 Ils ont séjourné ici</h2>
-        <p class="lead">La réputation des chambres d’hôtes est déjà faite : une clientèle fidèle et d’excellentes notes sur les plateformes de réservation — la garantie de reprendre une activité clé en main.</p>
+        <p class="lead">La réputation des chambres d’hôtes est déjà faite : une clientèle fidèle et d’excellentes notes sur les plateformes de réservation — la garantie de reprendre une activité clé en main. L’activité génère un chiffre d’affaires d’environ 30 000 € par an, avec une clientèle présente d’avril à octobre.</p>
       </div>
 
       <div class="pillRow" style="margin:0 0 22px" aria-label="Notes des plateformes">
