@@ -395,6 +395,14 @@
       background: var(--cream);
       color: var(--text);
     }
+    /* FAQ */
+    .faq{margin-top:12px}
+    details.faqItem{background:rgba(241,235,224,.45); border:1px solid rgba(153,70,14,.18); border-radius:16px; margin-bottom:10px}
+    details.faqItem summary{cursor:pointer; list-style:none; padding:14px 16px; font-weight:600; color:var(--navy); font-size:17px; display:flex; gap:10px; align-items:baseline}
+    details.faqItem summary::-webkit-details-marker{display:none}
+    details.faqItem summary::before{content:"+"; color:var(--brand); font-weight:700; flex:0 0 auto}
+    details.faqItem[open] summary::before{content:"\2013"}
+    details.faqItem p{margin:0; padding:0 16px 14px 36px; color:var(--muted); font-size:16px}
   </style>
 </head>
 
@@ -700,6 +708,25 @@
   </section>
 
   <!-- CARTE (retours Natalie 2/5 : fil rouge … → Carte → Contact) -->
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>❓ Questions fréquentes</h2>
+        <p class="lead">Les réponses aux questions que les acheteurs nous posent le plus souvent. Une autre question ? Écrivez-nous via le formulaire en bas de page.</p>
+      </div>
+      <div class="faq">
+        <details class="faqItem"><summary>Pourquoi vendez-vous ?</summary><p>Après de belles années consacrées à l’accueil des voyageurs, Michel et Annie souhaitent passer la main. La maison familiale et son activité cherchent de nouveaux propriétaires pour écrire la suite de leur histoire.</p></details>
+        <details class="faqItem"><summary>Le prix est-il négociable ?</summary><p>Le prix de 350 000 € a été fixé avec soin, mobilier et équipement compris. Toute offre sérieuse, en particulier après une visite, sera étudiée avec attention.</p></details>
+        <details class="faqItem"><summary>Pourquoi voit-on deux prix en ligne ?</summary><p>Ici, le bien est proposé en vente directe par la famille : 350 000 €, sans commission d’agence. Une agence locale le présente aussi, avec ses honoraires en plus. C’est le même bien — en nous contactant directement, l’acheteur économise les frais d’agence.</p></details>
+        <details class="faqItem"><summary>Faut-il reprendre l’activité de chambres d’hôtes ?</summary><p>Non, rien n’oblige à poursuivre l’activité. Le bien peut devenir une grande maison familiale ou accueillir un autre commerce : l’immeuble est déclaré à usage d’habitation et de commerce. Et pour qui veut se lancer, la reprise est possible sans interruption d’exploitation, mobilier et équipement compris.</p></details>
+        <details class="faqItem"><summary>Quels sont les chiffres de l’activité ?</summary><p>L’activité génère un chiffre d’affaires d’environ 30 000 € par an, avec une clientèle présente d’avril à octobre. Un dossier détaillé est disponible sur demande.</p></details>
+        <details class="faqItem"><summary>Pourquoi deux surfaces, 266 et 311 m² ?</summary><p>266 m² est la surface loi Carrez, qui exclut notamment les parties sous 1,80 m — c’est le chiffre qui figurera dans l’acte de vente. 311 m² est la surface de référence du DPE, qui inclut les combles aménagés sous rampants. Les deux chiffres sont exacts : ils ne mesurent pas la même chose.</p></details>
+        <details class="faqItem"><summary>Comment organiser une visite ?</summary><p>Les visites se font sur rendez-vous, en contactant Michel par téléphone ou via le formulaire en bas de page. La visite virtuelle 360° permet déjà un premier tour complet de la maison à distance.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section id="carte" class="section">
     <div class="wrap">
       <div class="titleRow">

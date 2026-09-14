@@ -395,6 +395,14 @@
       background: var(--cream);
       color: var(--text);
     }
+    /* FAQ */
+    .faq{margin-top:12px}
+    details.faqItem{background:rgba(241,235,224,.45); border:1px solid rgba(153,70,14,.18); border-radius:16px; margin-bottom:10px}
+    details.faqItem summary{cursor:pointer; list-style:none; padding:14px 16px; font-weight:600; color:var(--navy); font-size:17px; display:flex; gap:10px; align-items:baseline}
+    details.faqItem summary::-webkit-details-marker{display:none}
+    details.faqItem summary::before{content:"+"; color:var(--brand); font-weight:700; flex:0 0 auto}
+    details.faqItem[open] summary::before{content:"\2013"}
+    details.faqItem p{margin:0; padding:0 16px 14px 36px; color:var(--muted); font-size:16px}
   </style>
 </head>
 
@@ -701,6 +709,25 @@
   </section>
 
   <!-- CARTE (retours Natalie 2/5 : fil rouge … → Carte → Contact) -->
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section">
+    <div class="wrap">
+      <div class="titleRow">
+        <h2>❓ Frequently asked questions</h2>
+        <p class="lead">Answers to the questions buyers ask us most often. Have another question? Write to us using the form at the bottom of the page.</p>
+      </div>
+      <div class="faq">
+        <details class="faqItem"><summary>Why are you selling?</summary><p>After many happy years welcoming travellers, Michel and Annie feel it is time to hand over the keys. The family home and its business are looking for new owners to write the next chapter of their story.</p></details>
+        <details class="faqItem"><summary>Is the price negotiable?</summary><p>The price of €350,000 has been set with care, furniture and equipment included. Any serious offer, particularly following a visit, will be given careful consideration.</p></details>
+        <details class="faqItem"><summary>Why are there two prices online?</summary><p>Here, the property is offered for sale directly by the family: €350,000, with no agency commission. A local estate agency also markets the property, with its fees added on top. It is the same property — by contacting us directly, the buyer saves the agency fees.</p></details>
+        <details class="faqItem"><summary>Do we have to take over the bed &amp; breakfast business?</summary><p>No — there is no obligation to continue the business. The property could become a large family home or house another type of business: the building is officially registered for both residential and commercial use. And for those who wish to take the plunge, the business can be taken over without any interruption to trading, furniture and equipment included.</p></details>
+        <details class="faqItem"><summary>What are the business figures?</summary><p>The business generates a turnover of around €30,000 a year, with guests staying from April to October. Detailed figures are available on request.</p></details>
+        <details class="faqItem"><summary>Why two floor areas, 266 and 311 m²?</summary><p>266 m² is the “loi Carrez” floor area, which excludes areas with less than 1.80 m of head height — this is the figure that will appear in the deed of sale. 311 m² is the reference area used for the energy survey, which includes the converted attic space under the eaves. Both figures are correct: they simply measure different things.</p></details>
+        <details class="faqItem"><summary>How can I arrange a visit?</summary><p>Visits are by appointment — contact Michel by telephone or using the form at the bottom of the page. The 360° virtual tour already lets you explore the whole house from a distance.</p></details>
+      </div>
+    </div>
+  </section>
+
   <section id="carte" class="section">
     <div class="wrap">
       <div class="titleRow">
